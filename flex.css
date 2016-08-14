@@ -40,7 +40,7 @@ h1 {
     padding: 20px 0px 0 0;
     /*text-align: center;*/
 }
-#b {
+#social {
     padding-right: 0px;
     padding-left: 5px;
 }
@@ -49,6 +49,7 @@ h1 {
 }
 
 /*#White_2_ { transition: 1s; }*/
+
 svg:hover #White_2_ { 
     animation: blink 2s linear 1;
 }
@@ -58,6 +59,7 @@ svg:hover #White_2_ {
     40% { fill: #3B5998; }
     60% { fill: #3F70D7; }
 }
+
 
 /*img[src$=".svg"]:hover #White_2_{
   fill: red;
