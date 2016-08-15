@@ -1,3 +1,22 @@
+text {
+    filter: url(#filter);
+    fill: #3B5998;
+    font-family: 'Share Tech Mono', sans-serif;
+    font-size: 100px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+svg #Ebene_1 {
+  /*width: 300px;*/
+  /*height: 120px;*/
+  position: relative;
+  display: block;
+  /*overflow: hidden; */
+  /*margin: 0 auto;*/
+  /*background: black;*/
+}
+
+
 body {
     background: url("/home/aurelius/lion.jpg");
     background-size: cover;
@@ -5,22 +24,37 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    width: 100%;
-    height: 100%;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
 }
 h1 {
     font-size: 40px;
+    margin: 0;
+    padding: 10px;
+    color: #5F60B4;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h1:before,
+h1:after {
+    position: absolute;
+    content: '';
 }
 
-#nav {
-	/*background-color: lightblue;*/
-    height: 60px;
-	border-bottom: 2px solid #000;
+nav {
+    background-color: gold;
+    height: 70px;
+    width: auto;
+    border-bottom: 3px solid #000;
+    border-style-bottom: outset;
+    opacity: 0.7;
     display: -webkit-flex; /* Safari */
     display: flex;
     flex-flow: row nowrap;
 }
-#nav div {
+nav div {
     -webkit-flex-grow: 1; /* Safari 6.1+ */
     -webkit-flex-shrink: 1; /* Safari 6.1+ */
     -webkit-flex-basis: 100px; /* Safari 6.1+ */
@@ -28,10 +62,9 @@ h1 {
     flex-shrink: 1;
     /*flex-basis: 50px;*/
     /*border-right: 1px solid #000;*/
-    color: white;
 }
 #nav div:nth-of-type(1) {
-    padding: 0 10px;
+    padding: 30px 10px 0 0;
 }
 #nav div:nth-of-type(2) {
     flex-grow: 3;
@@ -40,7 +73,7 @@ h1 {
     padding: 20px 0px 0 0;
     /*text-align: center;*/
 }
-#social {
+#socialPad {
     padding-right: 0px;
     padding-left: 5px;
 }
@@ -64,7 +97,37 @@ svg:hover #White_2_ {
 /*img[src$=".svg"]:hover #White_2_{
   fill: red;
 }*/
-
+.pC {
+    position: relative;
+    top: 500px;
+}
+.p1 {
+    position: relative;
+    background-color: lightblue;
+    overflow: hidden;
+    width: 100%;
+    height: 700px;
+}
+.p2 {
+    position: relative;
+    top: 200px;
+    background-color: green;
+    overflow: hidden;
+    width: 100%;
+    height: 700px;
+}
+.p3 {
+    position: relative;
+    top: 400px;
+    background-color: purple;
+    overflow: hidden;
+    width: 100%;
+    height: 700px;
+    border-color: transparent;
+    background-clip: padding-box;
+    border-bottom-width: 100px;
+    border-bottom-style: solid;
+}
 
 
 
