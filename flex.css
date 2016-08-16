@@ -70,10 +70,15 @@ nav div {
 .social {
     padding-top: 20px;
 }
-.social svg:hover { 
-    -webkit-transform: rotate(10deg) scale(1.2);
-    -moz-transform: rotate(10deg) scale(1.2);
-    -o-transform: rotate(10deg) scale(1.2);
+.social #Layer_1:hover { 
+    -webkit-transform: rotate(40deg) scale(1.2);
+    -moz-transform: rotate(40deg) scale(1.2);
+    -o-transform: rotate(40deg) scale(1.2);
+}
+.social #Layer_1R:hover { 
+    -webkit-transform: rotate(-20deg) scale(1.2);
+    -moz-transform: rotate(-20deg) scale(1.2);
+    -o-transform: rotate(-20deg) scale(1.2);
 }
 svg:hover #hov { 
     animation: blink 2s linear 1;
