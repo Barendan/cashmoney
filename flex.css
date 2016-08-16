@@ -1,3 +1,4 @@
+
 text {
     filter: url(#filter);
     fill: #3B5998;
@@ -15,7 +16,6 @@ svg #Ebene_1 {
   /*margin: 0 auto;*/
   /*background: black;*/
 }
-
 
 body {
     background: url("/home/aurelius/lion.jpg");
@@ -37,11 +37,6 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-h1:before,
-h1:after {
-    position: absolute;
-    content: '';
-}
 
 nav {
     background-color: gold;
@@ -49,7 +44,7 @@ nav {
     width: auto;
     border-bottom: 3px solid #000;
     border-style-bottom: outset;
-    opacity: 0.7;
+    /*opacity: 0.7;*/
     display: -webkit-flex; /* Safari */
     display: flex;
     flex-flow: row nowrap;
@@ -63,44 +58,38 @@ nav div {
     /*flex-basis: 50px;*/
     /*border-right: 1px solid #000;*/
 }
-#nav div:nth-of-type(1) {
-    padding: 30px 10px 0 0;
-}
-#nav div:nth-of-type(2) {
-    flex-grow: 3;
-}
-#nav div:nth-of-type(3) {
-    padding: 20px 0px 0 0;
-    /*text-align: center;*/
-}
+/*#nav div:nth-of-type(1) {
+}*/
+
 #socialPad {
-    padding-right: 0px;
-    padding-left: 5px;
-}
-#menu {
-    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 10px;
+    float: right;
 }
 
-/*#White_2_ { transition: 1s; }*/
-
-svg:hover #White_2_ { 
+.social {
+    padding-top: 20px;
+}
+.social svg:hover { 
+    -webkit-transform: rotate(10deg) scale(1.2);
+    -moz-transform: rotate(10deg) scale(1.2);
+    -o-transform: rotate(10deg) scale(1.2);
+}
+svg:hover #hov { 
     animation: blink 2s linear 1;
 }
 @keyframes blink {
     /*0% { fill  : #3B5998; }*/
-    0% { fill : white; top: 50px;}
-    40% { fill: #3B5998; }
-    60% { fill: #3F70D7; }
+    0% { fill : white; }
+    /*40% { fill: #3B5998; }*/
+    /*60% { fill: #3F70D7; }*/
 }
 
-
-/*img[src$=".svg"]:hover #White_2_{
-  fill: red;
-}*/
 .pC {
     position: relative;
     top: 500px;
 }
+
 .p1 {
     position: relative;
     background-color: lightblue;
