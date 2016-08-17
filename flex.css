@@ -1,35 +1,4 @@
 
-text {
-    filter: url(#filter);
-    fill: gold;
-    /*font-family: 'Share Tech Mono', sans-serif;*/
-    font-family: 'Slabo 27px', serif;
-    font-size: 120px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-    background-color: #E6C82A;
-    background-size: cover;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-attachment: fixed;
-    background-repeat: repeat;
-    margin: 0;
-    padding: 0;
-}
-/*h1 {
-    font-size: 40px;
-    margin: 0;
-    padding: 10px;
-    color: #5F60B4;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}*/
-
 nav {
     position: relative;
     background-color: black;
@@ -62,36 +31,38 @@ nav div {
 }
 
 
-
 .m1 {
-    /*display: inline;*/
-    background-color: #E6C82A;
+    /*background-color: #E6C82A;*/
     position: relative;
     width: 100%;
-    height: 600px;
-    /*top: 500px;*/
+    height: 550px;
     z-index: 1;
 }
-.mainA {
-    /*display: inline-block;*/
+
+/*.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}*/
+.mA {
     background-color: white;
     position: relative;
     top: 5%;
-    left: 5%;
-    width: 750px;
+    left: 10%;
+    width: 650px;
     height: 250px;
     /*padding: 20px;*/
-    border: 3px solid outset #FFF;
+    border: 2px outset black;
+    /*border-color: black;*/
     box-shadow: 5px 5px 5px #5B5B5B;
     /*z-index: -1;*/
 }
-.aboutAlbum {
-    opacity: 0.8;
-}
-.aboutAlbum:hover {
-    opacity: 1.0;
-}
-.mainA .about {
+.faded { opacity: 0.8; }
+.faded:hover { opacity: 1.0; }
+
+.mA .about {
     width: 550px;
     height: 250px;
     padding-left: 20px;
@@ -129,25 +100,76 @@ nav div {
     letter-spacing: 20px;
 }
 
+
+
 .p2 {
     position: relative;
-    top: 200px;
-    background-color: green;
-    overflow: hidden;
-    width: 100%;
-    height: 700px;
+    background-color: lightblue;
+    /*overflow: hidden;*/
+    /*width: 100%;*/
+    /*height: 700px;*/
 }
-.p3 {
-    position: relative;
-    top: 400px;
-    background-color: purple;
-    overflow: hidden;
-    width: 100%;
-    height: 700px;
-    border-color: transparent;
-    background-clip: padding-box;
-    border-bottom-width: 100px;
-    border-bottom-style: solid;
+.video-container {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+.video-container .poster img {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+.video-container .title-container {
+  z-index: 1000;
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  /*color: #fff;*/
+}
+/*.video-container .description .inner {
+  font-size: 1em;
+  width: 45%;
+  margin: 0 auto;
+}*/
+/*.video-container .link {
+  position: absolute;
+  bottom: 3em;
+  width: 100%;
+  text-align: center;
+  z-index: 1001;
+  font-size: 2em;
+  color: #fff;
+}
+.video-container .link a {
+  color: #fff;
+}*/
+
+/*.video-container video {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+}
+.video-container video.fillWidth {
+  width: 100%;
+}*/
+/*.video-container .filter {
+  z-index: 100;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+.no-video .video-container video,
+.touch .video-container video {
+  display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important;
 }
 
 
@@ -163,10 +185,18 @@ nav div {
 
 
 
-
-
-
+/*---------------------------------------------------*/
 /*Nav Bar Links and Hover*/
+
+text {
+    filter: url(#filter);
+    fill: gold;
+    /*font-family: 'Share Tech Mono', sans-serif;*/
+    font-family: 'Slabo 27px', serif;
+    font-size: 120px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 .social {
     padding-top: 20px;
@@ -206,9 +236,21 @@ svg #Ebene_1 {
     padding-right: 10px;
     float: right;
 }
+/*---------------------------------------------------*/
 
 
-
+body {
+    background-color: #E6C82A;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+}
 
 table {
     display: table;
