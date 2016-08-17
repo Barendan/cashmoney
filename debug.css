@@ -1,0 +1,50 @@
+
+body {
+    background-color: gold;
+}
+
+.m1 {
+    display: inline;
+    background-color: #E6C82A;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    /*top: 500px;*/
+    z-index: 1;
+}
+.mainA {
+	/*display: inline-block;*/
+    background-color: white;
+    position: relative;
+    top: 5%;
+    left: 5%;
+    width: 750px;
+    height: 250px;
+    /*padding: 20px;*/
+    border: 3px solid outset #FFF;
+    box-shadow: 5px 5px 5px #5B5B5B;
+    /*z-index: -1;*/
+}
+.aboutAlbum {
+    opacity: 0.8;
+}
+.aboutAlbum:hover {
+    opacity: 1.0;
+}
+.mainA .about {
+    width: 550px;
+    height: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /*border: 1px solid outset;*/
+    /*box-shadow: ;*/
+    /*box-shadow: 5px 5px 5px #5B5B5B;*/
+}
+
+
+table {
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 2px;
+    border-color: gold;
+}
