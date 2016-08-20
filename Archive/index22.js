@@ -1,15 +1,27 @@
 
 
 
-$(document).ready(function() {
-    $(window).resize(function() {
-        var bodyheight = $(this).height();
-        $(".m1").height(bodyheight);
-        
-    console.log( "here:", bodyheight);
+// $(document).ready(function() {
+    // $(window).resize(function() {
+    //     var bodyheight = $(this).height();
+    //     $(".m1").height(bodyheight);
 
-    }).resize();
+    // console.log( "here:", bodyheight);
 
-    console.log( $(window).width() );
-    console.log( $(window).height() );
-});
+    // }).resize();
+
+    // console.log( $(window).width() );
+    // console.log( $(window).height() );
+
+
+    // $(window).resize(function() {
+    //     var bodyheight = $(this).height();
+    //     $(".m1").height(bodyheight);
+
+    // console.log( "here:", bodyheight);
+
+    // }).resize();
+
+// });
+
+

@@ -44,6 +44,11 @@
 	<noscript>
 		<p>It seems you have JavaScript turned off, which is rather unfortunate. If you have any problems using this website then please let me know: <a href="mailto:darryl@yourweb.expert" title="Email me">darryl@yourweb.expert</a></p>
 	</noscript> 
+
+<div class="o-page-transition js-page-transition is-loading"> 
+	<div class="o-page-transition__initial-overlay js-page-transition__initial-overlay">
+	</div> 
+
 <section data-nav-title="About me" id="introduction" class="o-section o-section--dark-blue js-scroll-point js-full-height-section"> 
 	<div class="o-section__content__container"> 
 		<div aria-labelledby="introduction__header" itemscope itemtype="http://schema.org/Person" class="c-introduction o-section__content o-media js-full-height-section__content"> 
@@ -60,16 +65,10 @@
 				full-stack web developer
 				</div> 
 			</h1> 
-
-
 			<p class="c-introduction__text">I'm a freelancer, based &nbsp;in <a href="https://www.google.com/maps/place/Miami,+FL/@25.7823072,-80.3010443,12z/data=!3m1!4b1!4m5!3m4!1s0x88d9b0a20ec8c111:0xff96f271ddad4f65!8m2!3d25.7616798!4d-80.1917902" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" title="View Miami (UTC-8:00) on a map" class="js-map-link o-inline-link o-inline-link--silver">
 			<span itemprop="addressLocality">Miami,&nbsp;</span><span itemprop="addressCountry">Florida</span></a>, with over &nbsp;<span class="js-years-of-experience">2</span>&nbsp;months &nbsp;of &nbsp;experience working &nbsp;on &nbsp;the &nbsp;web.</p> 
 
-
-			<ul class="c-introduction__contact-list"> 
-				<li class="o-circular-icon-button">
-					<a href="mailto:darryl@yourweb.expert" title="Contact me via email: darryl@yourweb.expert" class="o-circular-icon-button__link">
-						<span itemprop="email" class="o-circular-icon-button__text">darryl@yourweb.expert</span> 
+			<ul class="c-introduction__contact-list"> <li class="o-circular-icon-button"><a href="mailto:darryl@yourweb.expert" title="Contact me via email: darryl@yourweb.expert" class="o-circular-icon-button__link"><span itemprop="email" class="o-circular-icon-button__text">darryl@yourweb.expert</span> 
 			
 			<svg viewBox="0 0 32 32" class="o-circular-icon-button__link__icon o-icon o-icon--mail"> <use xlink:href="#icon--mail"></use> </svg></a></li> 
 			<li class="o-circular-icon-button"><a href="skype:darryl.snow?add" title="Add me on Skype: darryl.snow" class="o-circular-icon-button__link"><span class="o-circular-icon-button__text">Skype: darryl.snow</span> <svg viewBox="0 0 32 32" class="o-circular-icon-button__link__icon o-icon o-icon--skype"> <use xlink:href="#icon--skype"></use> </svg></a></li> 
@@ -81,10 +80,12 @@
 	</div> 
 
 
+
 <svg preserveAspectRatio="none" role="separator" version="1.1" viewBox="0 0 612 100" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" class="o-section__end"> <g> <path d="M612,0H0.912C306.459,100,489.777,100,612,0z"></path> </g> </svg> </section> 
 
 <section data-nav-title="Find out what I do" data-when-in-view="check-checkmarks" id="services" class="o-section o-section--padding-top o-section--sky-blue js-scroll-point"> 
 
+	<div class="o-section__content__container"> 
 		<div aria-labelledby="services__header" class="c-services o-section__content"> 
 			<h2 id="services__header" class="o-section__header o-section__header--blue--medium">What I do</h2> 
 			<ul class="c-services__list"> <li class="o-list-item o-list-item--blue--medium"> <h3 class="o-list-item__header"> 
@@ -113,12 +114,14 @@
 				<a data-page="about" href="/about/me" class="o-button o-button--ghost o-button--ghost--blue--medium js-trigger-page-transition">want to know more?</a>
 			</div> 
 		</div> 
+	</div> 
 
 
 <svg preserveAspectRatio="none" role="separator" version="1.1" viewBox="0 0 612 100" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" class="o-section__end"> <g> <path d="M612,0H0.912C306.459,100,489.777,100,612,0z"></path> </g> </svg> </section>
 
+<section data-nav-title="See who I've worked for" data-when-in-view="show-logos" id="clients" class="o-section o-section--padding-top o-section--blue js-scroll-point js-full-height-section"> 
 
-	<div class="o-section__content__container js-full-height-section"> 
+	<div class="o-section__content__container"> 
 		<div aria-labelledby="clients__header" class="c-clients o-section__content js-full-height-section__content"> 
 		  <h2 id="clients__header" class="o-section__header o-section__header--white">Some &nbsp;of &nbsp;the companies I've &nbsp;worked &nbsp;for</h2> <ul class="o-logo-grid o-logo-grid--white"> 
 		  
@@ -256,7 +259,7 @@
 
 
 
-<!-- <script src="index.js"></script> -->
+<script src="index.js"></script>
 </main>
 </body>
 </html>
