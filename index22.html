@@ -1,0 +1,177 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<title>Daniel Barenboim</title> 
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+	<!-- 
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+ -->
+	<link rel="stylesheet" type="text/css" href="index22.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+</head>
+<body>
+
+<svg style="position:absolute;width:0;height:0" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <defs> 
+	<symbol id="icon--github-alt" viewBox="0 0 1024 1024"> <title>github-alt</title> <path class="path1" d="M365.714 694.857q0 22.857-7.143 46.857t-24.571 43.429-41.429 19.429-41.429-19.429-24.571-43.429-7.143-46.857 7.143-46.857 24.571-43.429 41.429-19.429 41.429 19.429 24.571 43.429 7.143 46.857zM731.429 694.857q0 22.857-7.143 46.857t-24.571 43.429-41.429 19.429-41.429-19.429-24.571-43.429-7.143-46.857 7.143-46.857 24.571-43.429 41.429-19.429 41.429 19.429 24.571 43.429 7.143 46.857zM822.857 694.857q0-68.571-39.429-116.571t-106.857-48q-23.429 0-111.429 12-40.571 6.286-89.714 6.286t-89.714-6.286q-86.857-12-111.429-12-67.429 0-106.857 48t-39.429 116.571q0 50.286 18.286 87.714t46.286 58.857 69.714 34.286 80 16.857 85.143 4h96q46.857 0 85.143-4t80-16.857 69.714-34.286 46.286-58.857 18.286-87.714zM950.857 594.286q0 118.286-34.857 189.143-21.714 44-60.286 76t-80.571 49.143-97.143 27.143-98 12.571-95.429 2.571q-44.571 0-81.143-1.714t-84.286-7.143-87.143-17.143-78.286-29.429-69.143-46.286-49.143-65.714q-35.429-70.286-35.429-189.143 0-135.429 77.714-226.286-15.429-46.857-15.429-97.143 0-66.286 29.143-124.571 61.714 0 108.571 22.571t108 70.571q84-20 176.571-20 84.571 0 160 18.286 60-46.857 106.857-69.143t108-22.286q29.143 58.286 29.143 124.571 0 49.714-15.429 96 77.714 91.429 77.714 227.429z"></path> </symbol> 
+	<symbol id="icon--linkedin" viewBox="0 0 1024 1024"> <title>linkedin</title> <path class="path1" d="M199.429 357.143v566.286h-188.571v-566.286h188.571zM211.429 182.286q0.571 41.714-28.857 69.714t-77.429 28h-1.143q-46.857 0-75.429-28t-28.571-69.714q0-42.286 29.429-70t76.857-27.714 76 27.714 29.143 70zM877.714 598.857v324.571h-188v-302.857q0-60-23.143-94t-72.286-34q-36 0-60.286 19.714t-36.286 48.857q-6.286 17.143-6.286 46.286v316h-188q1.143-228 1.143-369.714t-0.571-169.143l-0.571-27.429h188v82.286h-1.143q11.429-18.286 23.429-32t32.286-29.714 49.714-24.857 65.429-8.857q97.714 0 157.143 64.857t59.429 190z"></path> </symbol> 
+	<symbol id="icon--mail" viewBox="0 0 1024 1024"> <title>mail</title> <path class="path1" d="M170.667 128h682.667q53 0 90.5 37.5t37.5 90.5v512q0 53-37.5 90.5t-90.5 37.5h-682.667q-53 0-90.5-37.5t-37.5-90.5v-512q0-53 37.5-90.5t90.5-37.5zM896 768v-466l-357.333 286q-11.333 9.333-26.667 9.333t-26.667-9.333l-357.333-286v466q0 17.667 12.5 30.167t30.167 12.5h682.667q17.667 0 30.167-12.5t12.5-30.167zM853.333 213.333h-682.667q-6.333 0-14 2.333l355.333 284.333 355.333-284.333q-7.667-2.333-14-2.333z"></path> </symbol> 
+	<symbol id="icon--phone" viewBox="0 0 1024 1024"> <title>phone</title> <path class="path1" d="M768 0h-512c-53.056 0-96 42.976-96 96v832c0 53.056 42.976 96 96 96h512c52.992 0 96-43.008 96-96v-832c0-53.056-43.008-96-96-96zM800 928c0 17.632-14.368 32-32 32h-512c-17.664 0-32-14.304-32-32v-64.128h576v64.128zM800 831.872h-576v-639.872h576v639.872zM800 160h-576v-64c0-17.664 14.336-32 32-32h512c17.632 0 32 14.336 32 32v64zM576 112c0 8.832-7.2 16-16 16h-96c-8.864 0-16-7.168-16-16v0c0-8.864 7.136-16 16-16h96c8.8 0 16 7.136 16 16v0zM544 911.872c0 8.8-7.2 16-16 16h-32c-8.832 0-16-7.2-16-16v0c0-8.864 7.168-16 16-16h32c8.8 0 16 7.136 16 16v0z"></path> </symbol> 
+	<symbol id="icon--skype" viewBox="0 0 1024 1024"> <title>skype</title> <path class="path1" d="M670.286 607.429q0-28.571-11.143-52.286t-27.714-39.143-41.714-28-47.143-19.429-50-13.143l-59.429-13.714q-17.143-4-25.143-6t-20-6.571-17.143-9.143-9.429-12-4.286-17.143q0-44 82.286-44 24.571 0 44 6.857t30.857 16.286 21.714 19.143 22.857 16.571 27.429 6.857q26.857 0 43.143-18.286t16.286-44q0-31.429-32-56.857t-81.143-38.571-104-13.143q-38.857 0-75.429 8.857t-68.286 26.857-50.857 49.714-19.143 73.429q0 34.857 10.857 60.857t32 43.143 45.714 27.714 58.857 18.571l83.429 20.571q51.429 12.571 64 20.571 18.286 11.429 18.286 34.286 0 22.286-22.857 36.857t-60 14.571q-29.143 0-52.286-9.143t-37.143-22-26-25.714-26.286-22-30.857-9.143q-28.571 0-43.143 17.143t-14.571 42.857q0 52.571 69.714 90t166.286 37.429q41.714 0 80-10.571t70-30.571 50.571-53.429 18.857-75.143zM877.714 731.429q0 90.857-64.286 155.143t-155.143 64.286q-74.286 0-133.714-45.714-44 9.143-85.714 9.143-81.714 0-156.286-31.714t-128.571-85.714-85.714-128.571-31.714-156.286q0-41.714 9.143-85.714-45.714-59.429-45.714-133.714 0-90.857 64.286-155.143t155.143-64.286q74.286 0 133.714 45.714 44-9.143 85.714-9.143 81.714 0 156.286 31.714t128.571 85.714 85.714 128.571 31.714 156.286q0 41.714-9.143 85.714 45.714 59.429 45.714 133.714z"></path> </symbol> 
+</defs></svg>
+
+<div class="container">	
+	<div class="section1">
+		<div class="m m1">
+			<div class="m1Image">
+				<img alt="Picture of me, Daniel Barenboim." src="doit2.jpg" class="image">
+			</div>
+
+			<div class="m1Text">
+				<span class="title">Daniel Barenboim</span> 
+				<div class="subheader">
+					full-stack developer
+				</div> 
+
+				<p class="introText">I'm a designer/coder currently based in<a href="https://www.google.com/maps/place/Miami,+FL/@25.7823072,-80.3010443,12z/data=!3m1!4b1!4m5!3m4!1s0x88d9b0a20ec8c111:0xff96f271ddad4f65!8m2!3d25.7616798!4d-80.1917902" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" title="View Miami (UTC-8:00) on a map" class="inlineLink">
+				<span itemprop="addressLocality">Miami, </span><span itemprop="addressCountry">Florida</span></a>. I love what I do, whether I'm working for me or you.</p> 
+
+				<ul>
+
+				<li>
+					<a href="mailto:darryl@yourweb.expert" title="Contact me via email: darryl@yourweb.expert"><span itemprop="email" class="hideText">darryl@yourweb.expert</span>
+					<svg viewBox="0 0 32 32" class="iconBtn o-icon o-icon--mail"> <use xlink:href="#icon--mail"></use> </svg></a></li> 
+				<li>
+					<a href="skype:darryl.snow?add" title="Add me on Skype: darryl.snow"><span class="hideText">Skype: darryl.snow</span> 
+					<svg viewBox="0 0 32 32" class="iconBtn o-icon o-icon--skype"> <use xlink:href="#icon--skype"></use> </svg></a></li> 
+				<li>
+					<a href="tel:008618669117013" title="Phone me: (+86) 186-6911-7013"><span itemprop="telephone" class="hideText">(+86) 186-6911-7013</span> 
+					<svg viewBox="0 0 32 32" class="iconBtn o-icon o-icon--phone"> <use xlink:href="#icon--phone"></use> </svg></a></li> 
+				<li>
+					<a href="https://github.com/darryl-snow" title="Follow me on Github: darryl-snow"><span class="hideText">Github: https://github.com/darryl-snow</span> 
+					<svg viewBox="0 0 32 32" class="iconBtn o-icon o-icon--github-alt"> <use xlink:href="#icon--github-alt"></use> </svg></a></li> 
+				<li>
+					<a href="https://www.linkedin.com/profile/view?id=AAMAAApURbQB8js72nhiwqJ5zNxxxUjjU_viclI" title="Read my Linkedin profile"><span class="hideText">Linkedin: https://www.linkedin.com/profile/view?id=AAMAAApURbQB8js72nhiwqJ5zNxxxUjjU_viclI</span> 
+					<svg viewBox="0 0 32 32" class="iconBtn o-icon o-icon--linkedin"> <use xlink:href="#icon--linkedin"></use> </svg></a></li> 
+				</ul> 
+
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div class="section">
+	<div class="m m2">
+		<h2 class="header">Skills For Hire</h2> <ul>
+
+		<li> 
+		<h3 class="header2"> Full-stack Web Development </h3> 
+		<p>I can support your design and development teams with front and back-end development, Content Management System (CMS) setup, database setup, as well as testing, deployment, and workflow setup.</p> </li> 
+		<li> 
+		<h3 class="header2"> JavaScript Apps </h3> 
+		<p>I ♥ JavaScript and always keep up to date with the latest frameworks like Angular and React. That means fast, responsive, and modular apps that can run on any device.</p> </li> 
+		<li> 
+		<h3 class="header2"> Design / UX </h3> 
+		<p>I design clean and simple user interfaces directly in the web browser, without the need for static comps. That makes my designs testable, modular, scalable, reusable, more realistic, and quicker to produce.</p> </li> 
+		<li> 
+		<h3 class="header2"> Project Management </h3> 
+		<p>Producing a web project on time and on budget requires the coordination of many different roles. I have experience in all of these roles and follow an agile methodology that involves breaking the project into small workable chunks, then tracking and reporting on a daily basis.</p> </li> 
+		<li> 
+		<h3 class="header2"> Consultancy </h3> 
+		<p>I enjoy teaching and fixing things. If you or your team are finding problems with how you work together, how to scale your codebase, how to optimise your design process, how to write more modular UIs then I can help increase the value of your product or organisation.</p> </li> 
+
+		</ul> 
+		<footer>
+			<a data-page="about" href="/about/me" class="btn">want to know more?</a>
+		</footer> 
+	</div>
+	</div>
+
+	<div class="section">
+	<div class="m m3">
+	  <h2 class="header">Some of the projects I've worked on</h2> <ul> 
+		  
+	  <li>
+	  <span class="o-logo-grid__item__text c-clients__list__item__text">FireWater</span> </li> 
+
+	  <li>
+	  <span class="o-logo-grid__item__text c-clients__list__item__text">Code Hunger</span> </li> 
+
+	  <li>
+	  <span class="o-logo-grid__item__text c-clients__list__item__text">Portfolio</span> </li> 
+
+	  <li>
+	  <span class="o-logo-grid__item__text c-clients__list__item__text">Coming Very Soon</span> </li> 
+
+	  <li>
+	  <span class="o-logo-grid__item__text c-clients__list__item__text">Coming Soon</span> </li> 
+
+	  <li>
+	  <span class="o-logo-grid__item__text c-clients__list__item__text">Coming Later</span> </li> 
+
+	  </ul>
+	</div>
+	</div>
+
+	<div class="section">
+	<div class="m m4">
+			<h2 class="header">Get in touch</h2> 
+			<div class="c-contact__form"> 
+				<form action="/api/2.0.0/email" method="post" class="o-form js-form"> 
+				<div class="o-form__input-group js-name"> 
+					<label for="name" class="o-form__label o-form__label--silver">Your name:</label> 
+					<input autocomplete="on" autocorrect="off" data-error="Don't forget your name!" id="name" maxlength="50" name="name" pattern="/^[^/!£@#$%^&amp;*()[]+~?&lt;&gt;.0-9|&quot;]+$/" placeholder="e.g. Al Pacino" spellcheck title="Your name" type="text" class="o-form__input o-form__input--block o-form__input--blue js-name-input"> 
+					<svg viewBox="0 0 32 32" class="o-icon o-icon--check o-form__input-group__checkmark"> <use xlink:href="#icon--check"></use> </svg> 
+				</div> 
+
+				<div class="o-form__input-group js-email"> <label for="email" class="o-form__label o-form__label--silver">Your email address:</label> <input autocomplete="on" autocorrect="off" autocapitalize="off" data-error="I need your email address :)" id="email" maxlength="50" name="email" pattern="[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" placeholder="e.g. gordon.shumway@melmac.com" spellcheck type="email" class="o-form__input o-form__input--block o-form__input--blue js-email-input"> <svg viewBox="0 0 32 32" class="o-icon o-icon--check o-form__input-group__checkmark"> <use xlink:href="#icon--check"></use> </svg> 
+				</div> 
+
+				<div class="o-form__input-group js-message"> 
+					<label for="message" class="o-form__label o-form__label--silver">Tell me about your project:<span class="o-form__label__note">(optional)</span></label> <textarea data-error="What will we be working on?" id="message" name="message" placeholder="e.g. My project entails... My budget is... My deadline is..." class="o-form__input o-form__input--block o-form__input--textarea o-form__input--blue js-message-input"></textarea> <svg viewBox="0 0 32 32" class="o-icon o-icon--check o-form__input-group__checkmark"> <use xlink:href="#icon--check"></use> </svg> 
+				</div> 
+
+				<div class="o-form__group"> <input type="submit" value="Email me" class="o-form__submit-button o-button o-button--blue--cerulean is-disabled js-form-submit"> 
+				</div> </form> 
+			</div>
+
+
+			<aside class="c-contact__info"> 
+				<div class="o-local-conditions o-local-conditions--light js-local-conditions"> 
+					<h3 class="o-local-conditions__location">Kunming <div class="u-subheader">Yunnan, China</div> </h3> 
+					<p class="o-local-conditions__time js-current-time">00:00</p> 
+					
+					<div class="o-local-conditions__map js-map"> 
+						<svg viewBox="0 0 100 85.7" class="o-local-conditions__map__image"> <g> <path d="M85.7,37.6c0,0,0.3-1.4,0.5-1.4s-1.5,0.4-1.5,0.4l-2-0.6l-1.7,1.8c0,0-1.3,1.1-1.6-1.2l-1.8-0.4c0,0-2.5-2.2,0.3-2.3 l1.1-0.8l0.2-1.1l1.7-1.5l1.4-1.5l1.3,0.2c0,0-1.2,5.4,0.1,3.8c1.4-1.6,2.5-2.5,3-2.5c0.5,0,4.3-5.6,4.3-5.6l0.4,0.5 c0,0,2.2,0.1,1.4-1c-0.8-1.2-0.1-0.7,0.3-0.7c0.3,0,2.6-2,2.1-3c-0.5-1,0.9,0.5,0.9,0.5l0.8-0.8c0,0-1.3-3.7-1.2-4.1 c0.1-0.4,0.9-1,0.9-1.1c0-0.1,1.9,1.7,1.8-1.3c0-3,0.9-6.6,0.5-7c-0.5-0.4-1.9,1.2-1.9,1.2l-0.8,0.1l-0.4,0.8l-1.9,0.9L93,9.3 l-0.7-1.6l-2.1-0.5c0,0-1.1,0-1.1-0.1s-0.8,0.4-0.8,0.4l-0.9-1.2c0,0-3.9-5.7-4.3-5.7c-0.5,0-1.9,0.1-2.6-0.4 c-0.6-0.6-2.1,0.4-2.3,0.6c-0.2,0.2-1.5,0.9-1.9,0.8c-0.4-0.1-1.8,2.3-0.2,1.8c1.6-0.5,0.2,1.8-0.2,2.1S75,8,75.1,8.2 c0.1,0.2,0.5,0.8-0.5,1.6c-1.1,0.8-2.3,0.8-2.9,0.5c-0.6-0.3-1.4,3.9-1.2,4.1c0.2,0.3,0.5,0.6,0.5,0.6s0.5-0.5,0.9-0.3 c0.3,0.2,1.1-0.2,1.3,0.1c0.2,0.4,0.1-2,2.4-0.4c2.3,1.6,2.3,2,0.3,2.1c-2,0-0.1,0.2-2.1,0.8l-0.4,0.8l-0.3-0.4 c0,0-0.7,0.9-0.9,0.9s0,0.9,0, 0.9s-1.2,1.1-2.4,1c-1.2-0.1-0.5,2.3-3.7,1.2l-0.7,0.6c0,0-0.5,1.9,0.1,2.1s0.1,1.1-0.5,1.1 c-0.5,0-1,2.3-1.9,2.2c-0.8,0-3.9,0.8-3.9,0.8l-4.4,1.9c0,0-0.6,0-0.7-0.4s-2.9-0.4-3.2-0.4c-0.3,0-1.5-2-5.1-1.1 c-3.6,0.9-5.1-0.8-5.1-0.8c-0.1,0-1.5-3.2-1.5-3.2l-3.1-2.1c0,0-4.4-0.1-4.1-1.4l0.6-1.1c0,0-0.1-0.9,0-1c0.1-0.2,0.3-0.7,0.3-0.7 s-2.4-2-4.1-5.8L28,11.9c0,0-0.8,0.2-1.1,0.1c-0.3-0.1,0.1,0.7-2,1.2c-2.1,0.5-0.6,2.7-0.6,2.7s1,2.5-4-1c0,0-0.9,2.8-1.8,3.2 c-0.9,0.4,0.3,1,0.3,1L15,19c0,0,0.9,0.8-0.1,1.3l0.1,0v1.2l0.2,0.7c0,0-0.2,1.6-1.3,2.3v0.9L13,25.7l-0.2,0.4l-1-0.2 c0,0-2.1,1-2.1,1.1c0,0.1-2-0.1-2-0.2c0-0.2-1,0.9-1,0.9l-1.2-0.1L5.3,27c0,0-1,0.1-1.2-0.2c-0.2-0.2-0.3,0.6-1.5,0.6l0.1,0L2.1,28 v0.5l-0.8,0.9l0.1,1.5l0.7-0.2L3,31.6c0,0,0.5,3-1.6,2.5c-2.1-0.5,2.2,2.2,2.2,2.2s0.4,0.6-0.5,1.2c-0.8,0.6,2,1.7,2,1.7 s1.1,0.5,2.1,0.1c1-0.4,4.3,0.6,2.2,2.9l-1.1,1.1H7.2l0.1,0.6L7,44.1l0.5,0.8l0.4,0.3l0,1.2H7.3l-0.4,0.5L6,46.1 c0,0-0.4,0.9,0.1,1.1c0.5,0.3,0,1.5-0.2,1.7c-0.2,0.3,3.8,4,3.8,4l0.8-0.4c0,0,2.1,1.5,2.1,1.7c0,0.2,1.4,1.6,1.4,1.6l0.8-0.2 c0,0,0.7,0,0.2,0.9c-0.5,1,1.1,1,1.1,1l2.2,1.9h1.2c0,0,1.9,1.3,3.2,0.5c1.3-0.7,1.6,0.2,0.9,1c-0.7,0.9,1.5-0.6,1.6-1 c0-0.4,1.4-0.8,2.1,0.2c0.7,1,0.9,0.4,1.2,0.4c0.2,0,0.9,0,1.1,0.5c0.3,0.5,2.1-0.1,1.9-0.6c-0.1-0.5,1.3-1,1.3-1l1.1,0 c0,0,1.2-1.5,2.9-0.7l1.5-0.7l0.6,0.5l-0.4,0.4l0.8,0.6c0,0-2.5,1.5,1.5,1.3c4-0.2,1.6,5.4,1.1,6.7c-0.5,1.4-1.1,1.7-1.1,1.7 l0.1,1.3l2.3-0.2l-0.1,0.6c0,0,0.2,1.7,1.1,1.7c0.9,0,0.5,1.3-0.1,2.2c0,0,1.4,0.3,1.5,0.7c0.1,0.4,1.3,1.3,2,0.6 c0.6-0.6,0.8,0.2,0.8,0.9c0,0.7,1,0,1,0l-0.2-1.8c0,0-0.5-0.9,0.8-0.7c1.3,0.1,1.5-0.7,1.5-0.7l0.7,0.4l0.7-0.4l0.3,0.1l0.4-0.2 l0.5,0.4l0.3-0.4l0.7,0.2l0.7-0.3l0.2-0.8c0,0,1-0.9,1.4,0.2c0.5,1.1,2.5,0.5,2.5,0.5l-0.4,0.7l1.7,1.9c0,0,0.6-0.7,1.6,0.1 c1,0.7,1.2-0.1,1.2-0.1v-0.6l1.6,0.9l1.2,0c0,0-0.8,2.2,0.7,2.4c1.5,0.2,0.7-0.7,0.7-0.7s-1.3-1,0.1-1.6c1.4-0.6,4.9-2.1,4.9-2.1 l1.2-1l-0.3-1.2l1,0.7c0,0,4.8-0.1,6.1-3.2l1-1l0.9-1.1l-0.3-0.4l2.3-2.7c0,0,4-9.3,3.6-9.8c-0.4-0.5,1.2-1.7-3.2-1.5 c-4.5,0.2,2.1-2.1,2.5-2.1c0.4,0-0.4-2-0.4-2l-2.6-2L83,44.3c0,0-2.5-1.1-1.6-2.3S84.1,37.6,85.7,37.6"></path> <path d="M64.7,83.9v0.3c0,0,0.7,0.3,0.8,0.6c0.1,0.3,0.7-0.3,1.1,0.1s0.3-0.6,0.8-0.6c0.4,0,0.4-0.7,0.8-0.7c0.4,0,0.3-2.1,1.2-2.6 c0.9-0.5-1.3-1.2-1.1-0.7l-1,0.2h-1.1L65.9,81h-0.4v0.5C65.5,81.5,63.9,82.9,64.7,83.9L64.7,83.9z"></path> </g> </svg> 
+					</div> 
+
+					<div class="o-local-conditions__weather is-hidden js-weather"> 
+						<div class="o-local-conditions__weather__condition"> 
+							<svg viewBox="0 0 32 32" class="o-icon o-icon--large o-icon--weather js-weather-icon"> <use xlink:href="#icon--clear--day"></use> </svg> 
+						</div> 
+						<div class="o-local-conditions__weather__temperature"><span class="js-temperature">20</span><span class="o-local-conditions__weather__temperature__symbol">&deg;C</span>
+						</div> 
+
+					</div> 
+				</div> 
+			</aside> 
+	</div> 
+	</div>
+
+
+
+
+
+
+	<!-- // <script src="js/bootstrap.min.js"></script> -->
+	<script src="index22.js"></script>
+</body>
+</html>
