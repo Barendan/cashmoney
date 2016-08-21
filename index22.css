@@ -1,4 +1,13 @@
 
+text {
+    filter: url(#filter);
+    fill: #ffffcb;
+    font-family: 'Lato', sans-serif;
+    font-size: 120px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 body {
     /*position: relative;*/
     background: #fff;
@@ -54,20 +63,6 @@ div {
     width: 100%;
     height: 100%;
 }
-
-/*.m {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    min-width: 1024px;
-    min-height: 100%;
-    width: 100%;
-    height: 100%;
-}*/
 .m1 {
     background-color: #043561;
     color: #2384C6;
@@ -99,10 +94,10 @@ div {
 .title {
     position: relative;
     line-height: .90;
-    font-size: 4.0rem;
+    font-size: 3.0rem;
     font-weight: 100;
     letter-spacing: -5px;
-    color: #ffffcb;
+    /*color: #ffffcb;*/
     /*line-height: 1.19;*/
     /*font-size: 4rem;*/
 }
