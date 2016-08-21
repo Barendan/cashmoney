@@ -54,12 +54,6 @@ div {
     width: 100%;
     height: 100%;
 }
-@media (min-width: 876px) {
-    .container {
-    position: relative;
-    height: 100vh;
-    }
-}
 
 /*.m {
     display: -webkit-flex;
@@ -73,75 +67,19 @@ div {
     min-height: 100%;
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    overflow: hidden;
 }*/
 .m1 {
-    /*padding-top: 35%;*/
     background-color: #043561;
     color: #2384C6;
-    /*margin-top: auto;*/
-    /*padding: 1.5rem 10%;*/
-    /*height: auto;*/
-    /*height: 100vh;*/
-    /*width: 100vw;*/
-    /*text-align: center;*/
-}
-@media (min-width: 800px) {
-    .m1, .m3, .m4 {
-        /*padding: 10%;*/
-        /*margin-left: auto;*/
-        /*margin-right: auto;*/
-        
-        height: 600px;
-        /*width: 100vw;*/
-    }
 }
 .m1Image {
     position: relative;
     margin-left: .52083%;
     margin-right: .52083%;
     width: 98.95949999999999%;
-    text-align: center;
     margin-bottom: 1.5rem;
-
-
-    position: relative;
-    /*margin-left: .52083%;*/
-    /*margin-right: .52083%;*/
-    /*margin-left: 20%;*/
-    /*margin-top: 20%;*/
-    /*margin: auto;*/
-    /*width: 15.29206%;*/
     height: auto;
-    /*margin-bottom: 0;*/
-    /*padding-right: 1rem;*/
-    /*padding: auto;*/
-    /*font-size: 22px;*/
     text-align: center;
-}
-@media (min-width: 876px) {
-    .m1Image {
-        margin-left:.52083%;
-        margin-right: .52083%;
-        margin-top: 10%;
-        width: 8rem;
-        height: ;
-        margin-bottom: 0;
-        padding-right: 1rem;
-        text-align: right;
-    }
-}
-@media (min-width: 54.857142857142854em) {
-    .m1Image {
-        margin-left:.52083%;
-        margin-right: .52083%;
-        margin-top: 10%;
-        width: 32.29206%;
-        margin-bottom: 0;
-        padding-right: 1rem;
-        /*text-align: right;*/
-    }
 }
 .image {
     position: relative;
@@ -155,23 +93,7 @@ div {
 }
 
 .m1Text {
-    /*padding-top: 3%;*/
     text-align: center;
-/*    margin-left: .52083%;
-    margin-right: .52083%;
-    width: 65.62577999999999%;
-    text-align: left;*/
-}
-@media (min-width: 54.857142857142854em) {
-    .m1Text {
-        margin-left:.52083%;
-        margin-right:.52083%;
-        margin-top: 10%;
-        font-family: 'Lato', serif;
-        /*letter-spacing: -10px;*/
-        width: 50%;
-        text-align: left;
-    }
 }
 
 .title {
@@ -312,6 +234,72 @@ div {
 
 
 
+@media (min-width: 876px) {
+    :root {
+        font-size: 22px;
+    }
+/*    .container {
+        position: relative;
+        height: 100%;
+    }*/
+    .section1 {
+        /*display: inline;*/
+        background-color: #043561;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 1400px;
+        padding: 1.5rem 10%;
+        /*width: 100%;*/
+        /*height: 100%;*/
+    }
+    .m1{
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        /*width: 900px;*/
+    }
+    .m1Image {
+        position: relative;
+        margin-left:.52083%;
+        margin-right: .52083%;
+        margin-top: 10%;
+        width: 32.29206%;
+        margin-bottom: 0;
+        padding-right: 1rem;
+        text-align: right !important;
+    }
+    .m1Text {
+        margin-left:.52083%;
+        margin-right: .52083%;
+        font-family: 'Lato', serif;
+        text-align: left !important;
+        margin-top: 10%;
+        /*width: 600px;*/
+        /*letter-spacing: -10px;*/
+    }
+    .introText {
+        max-width: 49ch;
+        margin: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 3rem;
+
+        font-size: 1.0rem;
+        font-weight: 300;
+        text-align: left !important;
+    }
+    .m1Text ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        /*-webkit-padding-start: 40px;*/
+        color: #7CB7FF;
+        text-align: left !important;
+    }
+}
 /*=================END OF ABOUT ME =======================*/
 
 /*=================START OF MY SKILLS =====================*/
