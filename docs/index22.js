@@ -1,6 +1,4 @@
 
-
-
 // $(document).ready(function() {
     // $(window).resize(function() {
     //     var bodyheight = $(this).height();
