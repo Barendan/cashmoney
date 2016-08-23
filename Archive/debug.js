@@ -1,79 +1,35 @@
-google.setOnLoadCallback(function(){
 
 
-/** Document Ready Functions **/
-/********************************************************************/
 
-// $( document ).ready(function() {
+var msg = '<h2>browser window</h2><p>width: ' + window.innerWidth + '</p>';
+msg += '<p>height: ' + window.innerHeight + '</p>';
+msg += '<h2>history</h2><p>items: ' + window.history.length + '</p>';
+msg += '<h2>screen</h2><p>width: ' + window.screen.width + '</p>';
+msg += '<p>height: ' + window.screen.height + '</p>';
+document.write(msg);
 
-    // Resive video
-    scaleVideoContainer();
 
-    initBannerVideoSize('.video-container .poster img');
-    initBannerVideoSize('.video-container .filter');
-    initBannerVideoSize('.video-container video');
-        
-    $(window).on('resize', function() {
-        scaleVideoContainer();
-        scaleBannerVideoSize('.video-container .poster img');
-        scaleBannerVideoSize('.video-container .filter');
-        scaleBannerVideoSize('.video-container video');
-    });
 
+// $(window).load(function() {
+  $('.post-module').hover(function() {
+    $(this).find('.description').stop().animate({
+      height: "toggle",
+      opacity: "toggle"
+    }, 300);
+  });
 // });
 
-/** Reusable Functions **/
-/********************************************************************/
-
-function scaleVideoContainer() {
-
-    var height = $(window).height();
-    var unitHeight = parseInt(height) + 'px';
-    $('.p2').css('height',unitHeight);
-
-}
-
-function initBannerVideoSize(element){
-    
-    $(element).each(function(){
-        $(this).data('height', $(this).height());
-        $(this).data('width', $(this).width());
-    });
-
-    scaleBannerVideoSize(element);
-
-}
-
-function scaleBannerVideoSize(element){
-
-    var windowWidth = $(window).width(),
-        windowHeight = $(window).height(),
-        videoWidth,
-        videoHeight;
-    
-    // console.log(windowHeight);
-
-    $(element).each(function(){
-        var videoAspectRatio = $(this).data('height')/$(this).data('width'),
-            windowAspectRatio = windowHeight/windowWidth;
-
-        if (videoAspectRatio > windowAspectRatio) {
-            videoWidth = windowWidth;
-            videoHeight = videoWidth * videoAspectRatio;
-            $(this).css({'top' : -(videoHeight - windowHeight) / 2 + 'px', 'margin-left' : 0});
-        } else {
-            videoHeight = windowHeight;
-            videoWidth = videoHeight / videoAspectRatio;
-            $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
-        }
-
-        $(this).width(videoWidth).height(videoHeight);
-
-        $('.p2 .video-container video').addClass('fadeIn animated');
-        
-
-    });
-}
 
 
-})
+
+
+
+
+// (function loopy() {
+
+//     doStuff();
+
+
+//     setTimeout(loopy, 100)
+
+// })();
