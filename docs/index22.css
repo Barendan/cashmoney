@@ -398,23 +398,25 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 .m3 {
     background-color: #00AFBC ;
     color: #FFF;
+    width: 100%;
+    height: 700px;
 
     position: relative;
-    padding-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5rem 10%;
-    text-align: left;
+    padding-top: 50px;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*padding: 1.5rem 10%;*/
+    /*text-align: left;*/
 }
-.m3 ul {
+.jects {
+    display: none;
     list-style: none;
     margin: 0;
     padding: 0;
     width: 100%;
-    /*border-right: 1px dotted #fff;*/
     border-bottom: none;
-
 }
+
 .m3 li {
     position: relative;
     border-bottom: 1px dotted #252525;
@@ -427,68 +429,17 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
     border-color: white;
 
 }
-.m3 li:nth-of-type(n+5) {
-    border-bottom: none
-}
-
-.m3 li:nth-of-type(2n) {
-    border-right: none
-}
-
-@media (min-width: 54.857142857142854em) {
-    .m3 li {
-        width:33.3%;
-        border-color: white;
-    }
-
-    .m3 li:nth-of-type(n+5) {
-        border-bottom: 1px dotted #FFF
-    }
-
-    .m3 li:nth-of-type(2n) {
-        border-right: 1px dotted #FFF
-    }
-
-    .m3 li:nth-of-type(n+4) {
-        border-bottom: none
-    }
-
-    .m3 li:nth-of-type(3n) {
-        border-right: none
-    }
-}
 
 
-
-
-/*=================END OF MY WORK=======================*/
-
-
-
-/*=================START OF CONTACT ME=====================*/
-
-.m4 {
-    background: #004056;
-    color: #fff;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    /*z-index: -1;*/
-
-
-    /*max-width: 1200px;*/
-    /*padding: 1.5rem 10%;*/
-    /*font-weight: 300;*/
-    /*letter-spacing: .5px;*/
-}
-.cLeft {
+.left {
     position: relative;
     float: left;
     width: 50%;
     height: 100%;
     z-index: 5;
 }
-.cRight {
+.right {
+    background-color: red;
     position: relative;
     float: right;
     width: 50%;
@@ -496,6 +447,16 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
     z-index: 5;
 
 }
+
+
+/*=================END OF MY WORK=======================*/
+
+#icons {
+    /*background-color: white;*/
+    fill: #95a5a6;
+}
+
+
 
 
 
