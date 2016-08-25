@@ -138,6 +138,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
     color: #7CB7FF;
     border-bottom: 1px solid #ffffcb;
 }
+#icons {
+    /*background-color: white;*/
+    fill: #95a5a6;
+}
 .m1Text ul {
     list-style: none;
     margin: 0;
@@ -399,17 +403,15 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
     background-color: #00AFBC ;
     color: #FFF;
     width: 100%;
-    height: 700px;
+    /*height: auto;*/
+    overflow: hidden;
 
     position: relative;
-    padding-top: 50px;
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
     /*padding: 1.5rem 10%;*/
-    /*text-align: left;*/
 }
 .jects {
-    display: none;
+    /*display: none;*/
+    background-color: black;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -419,42 +421,45 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 
 .m3 li {
     position: relative;
-    border-bottom: 1px dotted #252525;
-    border-right: 1px dotted #252525;
+    /*border-bottom: 1px dotted #252525;*/
+    /*border-right: 1px dotted #252525;*/
     display: inline-block;
-    height: 8rem;
-    margin-left: -5px;
-    margin-top: -4px;
-    width: 50%;
+    margin: 10px;
     border-color: white;
-
 }
-
 
 .left {
+    background-color: #00AFBC ;
     position: relative;
-    float: left;
-    width: 50%;
-    height: 100%;
-    z-index: 5;
+    /*float: left;*/
+    /*width: 100%;*/
+    /*height: 100vh;*/
 }
-.right {
-    background-color: red;
+.overlay  {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding-left: 5%;
+  padding-right: 5%;
+  opacity: 0.5;
+}
+
+/*.right {
+    background-color: black;
     position: relative;
     float: right;
     width: 50%;
-    height: 100%;
-    z-index: 5;
+    height: 100vh;
 
-}
-
+    background-color: rgb(200,200,200);
+    margin: 0px;
+    overflow: hidden;
+}*/
 
 /*=================END OF MY WORK=======================*/
-
-#icons {
-    /*background-color: white;*/
-    fill: #95a5a6;
-}
 
 
 
