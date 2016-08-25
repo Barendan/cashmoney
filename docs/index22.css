@@ -325,11 +325,12 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
     text-align: left;
 }
 .m2 p {
+    background-color: none;
     font-weight: 300;
     line-height: 1.5;
     margin: 1em auto 0;
     max-width: 75ch;
-    text-align: center
+    text-align: center;
 }
 .m2 footer {
     margin-left: .52083%;
@@ -403,48 +404,55 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
     background-color: #00AFBC ;
     color: #FFF;
     width: 100%;
-    /*height: auto;*/
     overflow: hidden;
 
     position: relative;
-    /*padding: 1.5rem 10%;*/
+    /*height: 700px;*/
 }
 .jects {
     /*display: none;*/
-    background-color: black;
+    /*background-color: black;*/
     list-style: none;
     margin: 0;
-    padding: 0;
-    width: 100%;
+    padding-top: 15%;
     border-bottom: none;
-}
-
-.m3 li {
-    position: relative;
-    /*border-bottom: 1px dotted #252525;*/
-    /*border-right: 1px dotted #252525;*/
-    display: inline-block;
-    margin: 10px;
-    border-color: white;
+    width: 100%;
 }
 
 .left {
     background-color: #00AFBC ;
     position: relative;
-    /*float: left;*/
-    /*width: 100%;*/
-    /*height: 100vh;*/
+    height: 100vh;
 }
 .overlay  {
-  background-color: black;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  padding-left: 5%;
-  padding-right: 5%;
-  opacity: 0.5;
+    /*background-color: black;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /*opacity: 0.8;*/
+}
+
+.overlay li {
+    position: relative;
+    display: inline-block;
+    height: 240px;
+    margin: 0;
+    /*padding-left: 10px;*/
+    border: 0;
+    /*border-left: 1rem solid transparent;*/
+    /*box-shadow: 5px 5px 5px #5C5C5C;*/
+    opacity: 0.6;
+}
+.overlay li:hover {
+    box-shadow: 5px 5px 5px #404040;
+    opacity: 1.5;
+    cursor: pointer;
+}
+
+.listed {
+    margin: 0;
 }
 
 /*.right {

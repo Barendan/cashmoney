@@ -286,10 +286,17 @@ $( window ).resize(function() {
 
 
 
-$("p").hover(function(){
-    $(this).css("background-color", "yellow");
-    }, function(){
-    $(this).css("background-color", "pink");
+
+$(document).ready(function() {
+    $("* #expand").click(function(){
+        alert("hello moto");
+
+
+        var full = ``
+        
+        $(".overlay").html(full)
+        $(this).css("width", "500px");
+    });
 });
 
 
