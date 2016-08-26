@@ -286,16 +286,38 @@ $( window ).resize(function() {
 
 
 
+var original = `
+  <h2 class="header">Some of the projects Ive worked on</h2> 
+  <ul class="jects">
+  <li>
+    <img id="expand" src="images/FireWater.png" width="100%" height="100%"> </li>&nbsp;&nbsp;&nbsp;
+  <li>
+    <img id="expand" src="images/Hungry.png" width="100%" height="100%"></li> &nbsp;&nbsp;&nbsp;
+  <li>
+    <img id="expand" src="images/Portfolio.png" width="100%" height="100%"> </li> 
+  </ul><br>
+
+  <span class="header">More Coming Very Soon...</span>
+                `;
+var full = `
+<h2 class="header">Some of the projects Ive worked on</h2>
+<img class="xl" src="images/FireWater.png" width="100%" height="100%">
+            `;
 
 $(document).ready(function() {
-    $("* #expand").click(function(){
-        alert("hello moto");
 
-
-        var full = ``
+    $( "#js-expand" ).click(function (){
+            // $(".jects").html(full);
+            $("h2").css("margin-bottom", "0%");
+            $(".overlay").removeClass("normal");
+            $(".overlay").addClass("full");
+    
+    });
+    
+    $( ".xl" ).click(function (){
+            $(".overlay").removeClass("full");
+            $(".overlay").addClass("normal");
         
-        $(".overlay").html(full)
-        $(this).css("width", "500px");
     });
 });
 

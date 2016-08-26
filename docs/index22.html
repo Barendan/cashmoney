@@ -16,6 +16,10 @@
 <body>
 
 <div class="container">	
+  <canvas width="100%" height="100%" class="flare"></canvas>
+  <canvas width="100%" height="100%" class="snow"></canvas>
+  <canvas width="100%" height="100%" class="flake"></canvas>
+
 	<div class="section1">
 		<div class="m1">
 			<div class="m1Image">
@@ -29,7 +33,7 @@
 
 					<defs>
 					  <filter id="filter">
-					    <feFlood flood-color="#043561" result="black" />
+					    <feFlood flood-color="#010334" result="black" />
 					    <feFlood flood-color="red" result="flood1" />
 					    <feFlood flood-color="green" result="flood2" />
 						<feOffset in="SourceGraphic" dx="3" dy="0" result="off1a"/>
@@ -178,23 +182,27 @@
 	      <script src="Projector.js"></script>
 	      <script src="CanvasRenderer.js"></script>
 	      <script src="index22.js"></script>
-	      <div class="overlay">
+
+	      <div class="overlay normal">
 		      <h2 class="header">Some of the projects I've worked on</h2> 
-				<span></span>
 			
-		      <ul class="jects"> 
-		        
+				<!-- Normal Display -->
+		      <ul class="jects">
 		      <li>
-		        <img id="expand" src="images/FireWater.png" width="320px" height="240px"> </li>&nbsp;&nbsp;&nbsp;
-
+		        <img id="js-expand" src="images/FireWater.png" width="100%" height="100%"> </li>&nbsp;&nbsp;&nbsp;
 		      <li>
-		        <img id="expand" src="images/Hungry.png" width="320px" height="240px"></li> &nbsp;&nbsp;&nbsp;
-
+		        <img id="js-expand" src="images/Hungry.png" width="100%" height="100%"></li> &nbsp;&nbsp;&nbsp;
 		      <li>
-		        <img id="expand" src="images/Portfolio.png" width="320px" height="240px"> </li> 
-		      </ul><br>
+		        <img id="js-expand" src="images/Portfolio.png" width="100%" height="100%"> </li> 
+		      </ul>
+		      <br>
+		      	<!-- Full Display -->
+		      <img class="show1 xl" src="images/FireWater.png" width="100%" height="100%">
+		      <img class="show2 xl" src="images/Hungry.png" width="100%" height="100%">
+		      <img class="show3 xl" src="images/Portfolio.png" width="100%" height="100%">
+				
 
-		      <span class="header">More Coming Very Soon...</span> 
+		      <div class="finalFooter">More Coming Very Soon...</div> 
 	      </div>
     	<!-- </div> -->
 
@@ -209,6 +217,7 @@
 			<b id="diamond"></b>
 			<b id="cut-diamond"></b> -->
 
+	<script src="let_it_snow.js"></script>
 
 </body>
 </html>

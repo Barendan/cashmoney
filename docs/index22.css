@@ -51,13 +51,48 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 
 
 
-
+/*=============LET IT SNOW=====================*/
 .container {
     position: relative;
+    padding: 0;
+    margin: 0;
+    /*height: 100%;*/
     height: 100vh;
+    /*padding-bottom: 50px;*/
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
+html {
+  height: 100%;
+}
+
+canvas.flare,
+canvas.snow,
+canvas.flake {
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+canvas.flare {
+  opacity: 0.5;
+}
+/*----------End of Snow-------------*/
+
+
 .section1 {
-    background-color: #043561;
+    /*background-color: #043561;*/
+    background: #090b44; 
+    background: -moz-radial-gradient(center, ellipse cover, #090b44 0%, #00001c 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#090b44), color-stop(100%,#00001c)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, #090b44 0%,#00001c 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, #090b44 0%,#00001c 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, #090b44 0%,#00001c 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center, #090b44 0%,#00001c 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#090b44', endColorstr='#00001c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -75,7 +110,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
     /*Might use as container later*/
 }
 .m1 {
-    background-color: #043561;
+    /*background-color: #043561;*/
     color: #2384C6;
 }
 .m1Image {
@@ -414,7 +449,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
     /*background-color: black;*/
     list-style: none;
     margin: 0;
-    padding-top: 15%;
+    padding-top: 20%;
     border-bottom: none;
     width: 100%;
 }
@@ -437,7 +472,9 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 .overlay li {
     position: relative;
     display: inline-block;
-    height: 240px;
+    /*width: 320px;*/
+    width: 30%;
+    height: 32vh;
     margin: 0;
     /*padding-left: 10px;*/
     border: 0;
@@ -447,25 +484,38 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 }
 .overlay li:hover {
     box-shadow: 5px 5px 5px #404040;
-    opacity: 1.5;
-    cursor: pointer;
+    opacity: 1.0;
+    /*cursor: pointer;*/
+}
+.xl {
+    height: 84vh;
+    width: 97%;
+    padding-left: 5%;
+    padding-top: -5%;
+}
+#full {
+    border-left: 1rem solid transparent;
 }
 
-.listed {
-    margin: 0;
-}
-
-/*.right {
-    background-color: black;
+.finalFooter {
     position: relative;
-    float: right;
-    width: 50%;
-    height: 100vh;
+    bottom: 0;
+    left: 0;
+    padding-left: 5%;
+}
 
-    background-color: rgb(200,200,200);
-    margin: 0px;
-    overflow: hidden;
-}*/
+
+
+.full .finalFooter,
+.full .jects,
+.full li {
+    display: none;
+}
+
+
+.normal .xl {
+    display: none;
+}
 
 /*=================END OF MY WORK=======================*/
 
@@ -482,85 +532,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 
 
 
-
-#heart {
-    position: relative;
-    width: 100px;
-    height: 90px;
-}
-#heart:before,
-#heart:after {
-    position: absolute;
-    content: "";
-    left: 50px;
-    top: 0;
-    width: 50px;
-    height: 80px;
-    background: red;
-    -moz-border-radius: 50px 50px 0 0;
-    border-radius: 50px 50px 0 0;
-    -webkit-transform: rotate(-45deg);
-       -moz-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-         -o-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    -webkit-transform-origin: 0 100%;
-       -moz-transform-origin: 0 100%;
-        -ms-transform-origin: 0 100%;
-         -o-transform-origin: 0 100%;
-            transform-origin: 0 100%;
-}
-#heart:after {
-    left: 0;
-    -webkit-transform: rotate(45deg);
-       -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-         -o-transform: rotate(45deg);
-            transform: rotate(45deg);
-    -webkit-transform-origin: 100% 100%;
-       -moz-transform-origin: 100% 100%;
-        -ms-transform-origin: 100% 100%;
-         -o-transform-origin: 100% 100%;
-            transform-origin :100% 100%;
-}
-#diamond {
-    width: 0;
-    height: 0;
-    border: 50px solid transparent;
-    border-bottom-color: red;
-    position: relative;
-    top: -50px;
-}
-#diamond:after {
-    content: '';
-    position: absolute;
-    left: -50px;
-    top: 50px;
-    width: 0;
-    height: 0;
-    border: 50px solid transparent;
-    border-top-color: red;
-}
-#cut-diamond {
-    border-style: solid;
-    border-color: transparent transparent red transparent;
-    border-width: 0 25px 25px 25px;
-    height: 0;
-    width: 50px;
-    position: relative;
-    margin: 20px 0 50px 0;
-}
-#cut-diamond:after {
-    content: "";
-    position: absolute;
-    top: 25px;
-    left: -25px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-color: red transparent transparent transparent;
-    border-width: 70px 50px 0 50px;
-}
 #talkbubble {
    width: 120px;
    height: 80px;
