@@ -223,7 +223,7 @@ $(document).ready( function() {
       color: "#392F52",
       size:120,
       opacity: 0.00000001,
-      count: 40,
+      count: 20,
       interaction: false
     });
     $("canvas.snow").hide().fadeIn(5000).let_it_snow({

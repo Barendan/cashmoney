@@ -38,24 +38,20 @@ var $sB = $('.m1Text ul li');
 $sB.hover( 
   function() {
     var $svg = $(this).children().find('#icons');
-    var $flake = $(this).children().find('.flake');
-    console.log("Hovered: " + $flake);
+    var $flake = $(this).find('a');
+    // var cookie = $(this).find('a').attr('id','');
+    // cookie;
 
     // $flake.css("border-radius","0%");
-    $flake.hide();
-    // $svg.css("fill", "#000");
-    // $(this).fadeTo("fast", 1.0);
+    $(this).find('#burst-8').css("opacity", "1.0");
   },
   function() {
     var $svg = $(this).children().find('#icons');
-    var $flake = $(this).children('flake');
+    var $flake = $(this).find('.flake');
+    var cookie = $(this).find('a').attr('id','burst-8');
 
-
-    $(".m1Text ul li a").css("border-radius","50%");
-    $flake.hide();
-
-    // $svg.css("fill", "#FFF");
-    // $(this).fadeTo("fast", 0.3);
+    // $flake.css("border-radius","50%");
+    $(this).find('#burst-8').css("opacity", "0.5");
   }
 );
 

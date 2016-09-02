@@ -199,18 +199,19 @@ canvas.flare {
     cursor: auto;
     z-index: 10;
 }
-.flake{
-    border-radius: 50%;
-}
+
 @media (min-width: 54.857142857142854em) {
     .m1Text ul li a {
         margin:.5em
     }
 }
 
+
+
+
 #burst-8 {
     background: #ffffcb;
-    /*background: rgba(70,130,163,.4);*/
+    background: rgba(70,130,163,.4);
 
     width: 45px;
     height: 45px;
@@ -219,8 +220,12 @@ canvas.flare {
     text-align: left;
     z-index: 1;
     opacity: 0.5;
+    /*border-radius: 50%;*/
 }
-
+#burst-8:hover {
+    border: 2px solid black;
+    
+}
 #burst-8:before {
     content: "";
     position: absolute;
@@ -229,6 +234,7 @@ canvas.flare {
     height: 45px;
     width: 45px;
     background: #ffffcb;
+    transition: .3s all ease-in-out;
     /*background: rgba(70,130,163,.4);*/
     z-index: -1;
 
@@ -238,9 +244,12 @@ canvas.flare {
         -ms-transform: rotate(135deg);
          -o-transform: rotate(135deg);
 }
-
-
-
+#burst-8:hover:before{
+    -webkit-transform: rotate(0deg);
+       -moz-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+         -o-transform: rotate(135deg);
+}
 
 
 
@@ -266,21 +275,21 @@ canvas.flare {
 .m1Text ul li a .active,.m1Text ul li a:active,.m1Text ul li a:focus,.m1Text ul li a:hover {
     background: #ffffcb;
     outline: 0
-}*/
+}
 
-/*.m1Text ul li a .active .iconBtn,
+.m1Text ul li a .active .iconBtn,
 .m1Text ul li a:active .iconBtn,
 .m1Text ul li a:focus .iconBtn,
 .m1Text ul li a:hover .iconBtn {
     fill: #243342 !important
-}*/
-/*
+}
+
 .m1Text ul li a .active:after,.m1Text ul li a:active:after,.m1Text ul li a:focus:after,.m1Text ul li a:hover:after {
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1)
-}*/
-
+}
+*/
 
 
 @media (min-width: 876px) {
