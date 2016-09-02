@@ -1,13 +1,4 @@
 
-text {
-    filter: url(#filter);
-    fill: #ffffcb;
-    font-family: 'Lato', sans-serif;
-    font-size: 120px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
 body {
     /*position: relative;*/
     background: #fff;
@@ -177,6 +168,7 @@ canvas.flare {
     /*background-color: white;*/
     fill: #95a5a6;
 }
+
 .m1Text ul {
     list-style: none;
     margin: 0;
@@ -193,18 +185,22 @@ canvas.flare {
     display: inline-block;
     margin-left: -4px;
     text-align: -webkit-match-parent;
+    padding: 10px;
 }
 .m1Text ul li a {
     position: relative;
     background: rgba(70,130,163,.4);
-    border-radius: 50%;
     display: block;
     line-height: 50%;
     margin: .5em .25em;
     padding: .5em;
     text-decoration: none;
-    transition: .2s all ease-in-out;
+    transition: .3s all ease-in-out;
     cursor: auto;
+    z-index: 10;
+}
+.flake{
+    border-radius: 50%;
 }
 @media (min-width: 54.857142857142854em) {
     .m1Text ul li a {
@@ -212,12 +208,43 @@ canvas.flare {
     }
 }
 
+#burst-8 {
+    background: #ffffcb;
+    /*background: rgba(70,130,163,.4);*/
+
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+#burst-8:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 45px;
+    width: 45px;
+    background: #ffffcb;
+    /*background: rgba(70,130,163,.4);*/
+    z-index: -1;
+
+    /*opacity: 0.5;*/
+    -webkit-transform: rotate(135deg);
+       -moz-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+         -o-transform: rotate(135deg);
+}
 
 
 
 
 
 
+/*
 .m1Text ul li a:after {
     border-radius: 50%;
     box-shadow: 0 0 0 2px #ffffcb;
@@ -239,20 +266,20 @@ canvas.flare {
 .m1Text ul li a .active,.m1Text ul li a:active,.m1Text ul li a:focus,.m1Text ul li a:hover {
     background: #ffffcb;
     outline: 0
-}
+}*/
 
-.m1Text ul li a .active .iconBtn,
+/*.m1Text ul li a .active .iconBtn,
 .m1Text ul li a:active .iconBtn,
 .m1Text ul li a:focus .iconBtn,
 .m1Text ul li a:hover .iconBtn {
     fill: #243342 !important
-}
-
+}*/
+/*
 .m1Text ul li a .active:after,.m1Text ul li a:active:after,.m1Text ul li a:focus:after,.m1Text ul li a:hover:after {
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1)
-}
+}*/
 
 
 
@@ -281,7 +308,7 @@ canvas.flare {
         -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-        /*width: 900px;*/
+        /*width: 900px;*/`
     }
     .m1Image {
         position: relative;
@@ -309,7 +336,7 @@ canvas.flare {
 
         font-size: 1.0rem;
         font-weight: 300;
-        text-align: left !important;
+        text-align: center !important;
     }
     .m1Text ul {
         list-style: none;
@@ -317,8 +344,6 @@ canvas.flare {
         margin: 0;
         margin-right: 3rem;
         /*-webkit-padding-start: 40px;*/
-        color: #7CB7FF;
-        text-align: center !important;
     }
 }
 /*=================END OF ABOUT ME =======================*/
