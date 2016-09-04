@@ -34,14 +34,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 
 
 
-
-
-
-
-
-
-
-
 /*=============LET IT SNOW=====================*/
 .container {
     position: relative;
@@ -53,6 +45,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    z-index: 10;
 }
 html {
   height: 100%;
@@ -66,7 +59,8 @@ canvas.flake {
   height: 100%;
   top: 0;
   left: 0;
-  position: fixed;
+  position: absolute;
+  z-index: 15;
 }
 canvas.flare {
   opacity: 0.5;
@@ -74,7 +68,8 @@ canvas.flare {
 /*----------End of Snow-------------*/
 
 
-.section1 {
+.part1 {
+    position: relative;
     /*background-color: #043561;*/
     background: #090b44; 
     background: -moz-radial-gradient(center, ellipse cover, #090b44 0%, #00001c 100%); /* FF3.6+ */
@@ -97,11 +92,7 @@ canvas.flare {
     width: 100%;
     height: 100%;
 }
-.section {
-    /*Might use as container later*/
-}
 .m1 {
-    /*background-color: #043561;*/
     color: #2384C6;
 }
 .m1Image {
@@ -224,7 +215,7 @@ canvas.flare {
 }
 #burst-8:hover {
     border: 2px solid black;
-    
+
 }
 #burst-8:before {
     content: "";
@@ -252,44 +243,6 @@ canvas.flare {
 }
 
 
-
-/*
-.m1Text ul li a:after {
-    border-radius: 50%;
-    box-shadow: 0 0 0 2px #ffffcb;
-    content: "";
-    height: 100%;
-    left: -7px;
-    opacity: 0;
-    padding: 7px;
-    pointer-events: none;
-    position: absolute;
-    top: -7px;
-    -webkit-transform: scale(.8);
-    transform: scale(.8);
-    transition: -webkit-transform .2s,opacity .2s;
-    transition: transform .2s,opacity .2s;
-    width: 100%;
-}
-
-.m1Text ul li a .active,.m1Text ul li a:active,.m1Text ul li a:focus,.m1Text ul li a:hover {
-    background: #ffffcb;
-    outline: 0
-}
-
-.m1Text ul li a .active .iconBtn,
-.m1Text ul li a:active .iconBtn,
-.m1Text ul li a:focus .iconBtn,
-.m1Text ul li a:hover .iconBtn {
-    fill: #243342 !important
-}
-
-.m1Text ul li a .active:after,.m1Text ul li a:active:after,.m1Text ul li a:focus:after,.m1Text ul li a:hover:after {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1)
-}
-*/
 
 
 @media (min-width: 876px) {
@@ -355,9 +308,104 @@ canvas.flare {
         /*-webkit-padding-start: 40px;*/
     }
 }
-/*=================END OF ABOUT ME =======================*/
+/*=================END OF HOME =======================*/
 
-/*=================START OF MY SKILLS =====================*/
+/*=================START OF PART TWO =====================*/
+.part2 {
+    position: relative;
+    top: 100%;
+    z-index: 0;
+}
+.sidebar {
+    width: 17%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: table;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-right: 1px solid #eaeaea;
+    background-color: #fff;
+    z-index: 1;
+}
+.side-logo {
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+.side-menu {
+    display: table-cell;
+    vertical-align: middle;
+
+    position: relative;
+    /*font-weight: 600;*/
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #fff;
+}
+.part2 ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.padTop {
+    padding-top: 60% !important;
+}
+.side-menu ul li {
+    border-bottom: 1px solid #f0f0f0;
+}
+.side-menu ul li:first-child {
+    border-top: 1px solid #f0f0f0;
+}
+.side-menu ul li a {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+    color: #151515;
+    background-color: #ffffff;
+}
+/*=================END OF SIDEBAR===============*/
+
+.page-section {
+    margin-left: 17%;
+    overflow: hidden;
+    min-height: 500px;
+}
+
+.m3 {
+    position: relative;
+    background-color: #00AFBC ;
+    color: #FFF;
+    width: 100%;
+    overflow: hidden;
+}    
+.pg-item {
+    margin: 8% 5.5%;
+    padding: 3% 0;
+    max-width: 2000px;
+}
+
+
+.footer {
+    color: #777;
+    background: #151515;
+}
+.subfooter {
+    margin: 0 5.5%;
+    padding: 20px 0;
+}
+
+
+
+
 
 .m2 {
     background-color: #72B6F4 ;
@@ -469,15 +517,6 @@ canvas.flare {
 
 /*=================START OF MY WORK =====================*/
 
-.m3 {
-    background-color: #00AFBC ;
-    color: #FFF;
-    width: 100%;
-    overflow: hidden;
-
-    position: relative;
-    /*height: 700px;*/
-}
 .jects {
     /*display: none;*/
     /*background-color: black;*/
