@@ -1,6 +1,5 @@
 
 body {
-    /*position: relative;*/
     background: #fff;
     margin: 0;
     font-weight: 300;
@@ -23,16 +22,6 @@ h4 {
 
 :root {
     font-size: 16px;
-}
-@media (min-width: 500px) {
-    :root {
-        font-size:18px;
-    }
-}
-@media (min-width: 670px) {
-    :root {
-        font-size:20px;
-    }
 }
 
 
@@ -71,6 +60,8 @@ canvas.flare {
   opacity: 0.5;
 }
 /*----------End of Snow-------------*/
+
+
 
 
 .part1 {
@@ -134,7 +125,7 @@ canvas.flare {
     color: #ffffcb;
 }
 
-.subheader {
+.subtitle {
     line-height: 1.19;
     font-size: 1.5rem;
     font-weight: 400;
@@ -197,11 +188,7 @@ canvas.flare {
     z-index: 10;
 }
 
-@media (min-width: 54.857142857142854em) {
-    .m1Text ul li a {
-        margin:.5em
-    }
-}
+
 
 
 
@@ -251,69 +238,7 @@ canvas.flare {
 
 
 
-@media (min-width: 876px) {
-    :root {
-        font-size: 22px;
-    }
-/*    .container {
-        position: relative;
-        height: 100%;
-    }*/
-    .section1 {
-        /*display: inline;*/
-        background-color: #043561;
-        margin-left: 0;
-        margin-right: 0;
-        max-width: 1400px;
-        padding: 1.5rem 10%;
-        /*width: 100%;*/
-        /*height: 100%;*/
-    }
-    .m1{
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        /*width: 900px;*/`
-    }
-    .m1Image {
-        position: relative;
-        margin-left:.52083%;
-        margin-right: .52083%;
-        margin-top: 10%;
-        width: 32.29206%;
-        margin-bottom: 0;
-        padding-right: 1rem;
-        text-align: right !important;
-    }
-    .m1Text {
-        margin-left:.52083%;
-        margin-right: .52083%;
-        font-family: 'Lato', serif;
-        text-align: left !important;
-        margin-top: 10%;
-    }
-    .introText {
-        max-width: 49ch;
-        margin: 0;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        margin-right: 3rem;
 
-        font-size: 1.0rem;
-        font-weight: 300;
-        /*text-align: center !important;*/
-    }
-    .m1Text ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        margin-right: 3rem;
-        /*-webkit-padding-start: 40px;*/
-    }
-}
 /*=================END OF HOME =======================*/
 
 /*=================START OF PART TWO =====================*/
@@ -323,6 +248,7 @@ canvas.flare {
     z-index: 0;
 }
 .sidebar {
+    background-color: #CCC;
     width: 17%;
     height: 100%;
     position: fixed;
@@ -333,7 +259,6 @@ canvas.flare {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     border-right: 1px solid #eaeaea;
-    background-color: #fff;
     z-index: 1;
 }
 .side-logo {
@@ -349,11 +274,9 @@ canvas.flare {
     vertical-align: middle;
 
     position: relative;
-    /*font-weight: 600;*/
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    background-color: #fff;
 }
 .part2 ul{
     list-style: none;
@@ -376,21 +299,29 @@ canvas.flare {
     text-align: center;
     text-decoration: none;
     color: #151515;
-    background-color: #ffffff;
+    text-shadow: 2px 3px 3px #555;
+}
+.side-menu ul li a:hover{
+    background-color: white;
+    text-shadow: 1px 2px 1px #000 !important;
 }
 /*=================END OF SIDEBAR===============*/
 
 .page-section {
-    /*position: relative;*/
+    background-color: #CCCCCC;
     margin-left: 17%;
     overflow: hidden;
     min-height: 500px;
 }
 .pg-item {
     margin: 8% 5.5%;
-    /*padding: 3% 0;*/
+    padding: 3% 0 0 0;
     max-width: 2000px;
 }
+
+
+
+
 .work-list {
     overflow: hidden;
 }
@@ -400,7 +331,7 @@ canvas.flare {
 .work-item {
     position: relative;
     margin-top: 4%;
-    height: 8rem;
+    height: 10rem;
 }
 .work-item img {
     width: 100%;
@@ -409,7 +340,7 @@ canvas.flare {
     overflow: hidden;
     text-decoration: none;
     cursor: pointer;
-    border: 1px solid #fff;
+    border: 1px solid #444;
     box-sizing: border-box;
 }
 
@@ -419,6 +350,7 @@ canvas.flare {
     position: relative;
     overflow: hidden;
     width: 40%;
+    box-shadow: 1px 1px 10px #000;
 }
 .work-item-right {
     display: block;
@@ -429,45 +361,17 @@ canvas.flare {
     color: #151515;
 }
 
+
+
+
 .footer {
-    color: #777;
-    background: #151515;
+    border-top: 1px solid white;
 }
 .subfooter {
     margin: 0 5.5%;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
-
-
-
-
-.m3 {
-    position: relative;
-    background-color: #00AFBC ;
-    color: #FFF;
-    width: 100%;
-    overflow: hidden;
-}    
-.m2 {
-    background-color: #72B6F4 ;
-    color: #043561;
-    position: relative;
-    padding-top: 100px;
-    padding: 1.5rem 10%;
-    text-align: left;
-}
-.header {
-    margin-left: .52083%;
-    margin-right: .52083%;
-    width: 98.95949999999999%;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    padding: 0 .75rem;
-    font-weight: 200;
-    text-align: center;
-    /*text-decoration: underline;*/
-}
 
 /*.m2 ul li {
     margin-left: .52083%;
@@ -487,6 +391,17 @@ canvas.flare {
     text-align: center;
 }
 
+.header {
+    margin-left: .52083%;
+    margin-right: .52083%;
+    width: 98.95949999999999%;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding: 0 .75rem;
+    font-weight: 200;
+    text-align: center;
+    /*text-decoration: underline;*/
+}
 .header2 {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -511,121 +426,16 @@ canvas.flare {
     text-transform: uppercase;
 }
 
-/*.m2 footer {
-    margin-left: .52083%;
-    margin-right: .52083%;
-    width: 98.95949999999999%;
-    margin-top: .75rem;
-    text-align: center
-}*/
-/*.btn {
-    position: relative;
-    cursor: pointer;
-    display: inline-block;
-    font-size: .65rem;
-    font-weight: 600;
-    padding: .45rem 1.875em;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: none;
-    text-transform: uppercase;
-    transition: .15s all ease-in-out;
-    
-    background-color: #72B6F4 ;
-    color: #043561;
-    border: 2px solid #fff;
-    border-radius: .3rem;
-    border-color: #043561;
-}*/
 
 
 
-
-/*=================END OF MY SKILLS =======================*/
-
-
-/*=================START OF MY WORK =====================*/
-
-.jects {
-    /*display: none;*/
-    /*background-color: black;*/
-    list-style: none;
-    margin: 0;
-    padding-top: 20%;
-    border-bottom: none;
-    width: 100%;
-}
-
-.left {
-    background-color: #00AFBC ;
-    position: relative;
-    height: 100vh;
-}
-.overlay  {
-    /*background-color: black;*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    /*opacity: 0.8;*/
-}
-
-.overlay li {
-    position: relative;
-    display: inline-block;
-    /*width: 320px;*/
-    width: 30%;
-    height: 32vh;
-    margin: 0;
-    /*padding-left: 10px;*/
-    border: 0;
-    /*border-left: 1rem solid transparent;*/
-    /*box-shadow: 5px 5px 5px #5C5C5C;*/
-    opacity: 0.6;
-}
-.overlay li:hover {
-    box-shadow: 5px 5px 5px #404040;
-    opacity: 1.0;
-    /*cursor: pointer;*/
-}
-.xl {
-    height: 84vh;
-    width: 97%;
-    padding-left: 5%;
-    padding-top: -5%;
-}
-#full {
-    border-left: 1rem solid transparent;
-}
-
-.finalFooter {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    padding-left: 5%;
-}
-
-
-
-.full .finalFooter,
-.full .jects,
-.full li {
-    display: none;
-}
-
-
-.normal .xl {
-    display: none;
-}
-
-/*=================END OF MY WORK=======================*/
+/*=================TRAVEL PHOTOSLIDER=======================*/
 
 .fg-body {
   margin: auto;
-  padding-top: 5%;
+  padding-top: 10%;
   position: relative;
-  height: 20rem;
+  height: 17rem;
   width: 20rem;
   -webkit-transform-style: preserve-3d;
    -webkit-backface-visibility: hidden;
@@ -687,27 +497,67 @@ canvas.flare {
 
 
 
-
-
-
-
-#talkbubble {
-   width: 120px;
-   height: 80px;
-   background: red;
-   position: relative;
-   -moz-border-radius:    10px;
-   -webkit-border-radius: 10px;
-   border-radius:         10px;
+h1.two {
+    color: white;
+    font-weight: 300;
+    margin: 0;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
 }
-#talkbubble:before {
-   content:"";
-   position: absolute;
-   right: 100%;
-   top: 26px;
-   width: 0;
-   height: 0;
-   border-top: 13px solid transparent;
-   border-right: 26px solid red;
-   border-bottom: 13px solid transparent;
+
+h1.inset {
+    font-size: 2rem;
+    text-align: center;
+  background-color: #565656;
+  color: transparent;
+  text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
+
+h1.elegantshadow {
+    text-align: center;
+    /*font-weight: 300;*/
+    /*letter-spacing: .5px;*/
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    /*padding: 0;*/
+    /*margin: 0;*/
+  text-shadow: 1px -1px 0 #767676,
+
+   -1px 2px 1px #999897, 
+   -2px 4px 1px #9e9c9c, 
+   -3px 6px 1px #a3a1a1, 
+   -4px 8px 1px #a8a6a6, 
+   -5px 0px 1px #adabab, 
+   -6px 2px 1px #b2b1b0, 
+   -7px 4px 1px #b7b6b5, 
+   -8px 6px 1px #bcbbba, 
+   -9px 8px 1px #c1bfbf, 
+   -10px 10px 1px #c6c4c4, 
+   -11px 12px 1px #cbc9c8, 
+   -12px 14px 1px #cfcdcd, 
+   -13px 16px 1px #d4d2d1, 
+   -14px 18px 1px #d8d6d5, 
+   -15px 10px 1px #dbdad9, 
+   -16px 12px 1px #dfdddc, 
+   -17px 14px 1px #e2e0df, 
+   -18px 16px 1px #e4e3e2;
+}
+
+h1.deepshadow {
+   color: #e0dfdc; 
+  letter-spacing: .1em;
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
 }
