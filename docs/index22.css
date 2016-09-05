@@ -189,10 +189,6 @@ canvas.flare {
 }
 
 
-
-
-
-
 #burst-8 {
     background: #ffffcb;
     background: rgba(70,130,163,.4);
@@ -239,9 +235,12 @@ canvas.flare {
 
 
 
+
+
 /*=================END OF HOME =======================*/
 
 /*=================START OF PART TWO =====================*/
+
 .part2 {
     position: relative;
     top: 100%;
@@ -325,15 +324,29 @@ canvas.flare {
 .work-list {
     overflow: hidden;
 }
-.work-item:first-child {
+/*.work-item:first-child {
     margin-top: 0;
-}
+}*/
 .work-item {
     position: relative;
     margin-top: 4%;
+    padding-bottom: 4%;
+    /*height: 10rem;*/
+}
+.work-item2 {
+    position: relative;
+    margin-top: 4%;
+    /*margin-top: 4%;*/
     height: 10rem;
 }
-.work-item img {
+.work-item p {
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 1rem auto 0;
+    max-width: 55ch;
+    text-align: center;
+}
+.work-item2 img {
     width: 100%;
     display: block;
     position: relative;
@@ -373,23 +386,6 @@ canvas.flare {
 }
 
 
-/*.m2 ul li {
-    margin-left: .52083%;
-    margin-right: .52083%;
-    width: 98.95949999999999%;
-    font-size: 1rem;
-    list-style: none;
-    padding: .75rem;`
-    text-align: left;
-}*/
-.m2 p {
-    background-color: none;
-    font-weight: 300;
-    line-height: 1.5;
-    margin: 1em auto 0;
-    max-width: 75ch;
-    text-align: center;
-}
 
 .header {
     margin-left: .52083%;
@@ -428,9 +424,8 @@ canvas.flare {
 
 
 
-
 /*=================TRAVEL PHOTOSLIDER=======================*/
-
+/*=====================================================*/
 .fg-body {
   margin: auto;
   padding-top: 10%;
