@@ -17,6 +17,9 @@ div {
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
     display: block
 }
+h4 {
+    -webkit-margin-before: 0;    
+}
 
 :root {
     font-size: 16px;
@@ -31,6 +34,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
         font-size:20px;
     }
 }
+
+
 
 
 
@@ -117,6 +122,7 @@ canvas.flare {
 
 .m1Text {
     text-align: center;
+    z-index: 100;
 }
 
 .title {
@@ -298,7 +304,7 @@ canvas.flare {
 
         font-size: 1.0rem;
         font-weight: 300;
-        text-align: center !important;
+        /*text-align: center !important;*/
     }
     .m1Text ul {
         list-style: none;
@@ -375,24 +381,53 @@ canvas.flare {
 /*=================END OF SIDEBAR===============*/
 
 .page-section {
+    /*position: relative;*/
     margin-left: 17%;
     overflow: hidden;
     min-height: 500px;
 }
-
-.m3 {
-    position: relative;
-    background-color: #00AFBC ;
-    color: #FFF;
-    width: 100%;
-    overflow: hidden;
-}    
 .pg-item {
     margin: 8% 5.5%;
     padding: 3% 0;
     max-width: 2000px;
 }
+.work-list {
+    overflow: hidden;
+}
+.work-item:first-child {
+    margin-top: 0;
+}
+.work-item {
+    position: relative;
+    margin-top: 4%;
+    height: 8rem;
+}
+.work-item img {
+    width: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+}
 
+.work-item-left {
+    display: block;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    width: 40%;
+}
+.work-item-right {
+    display: block;
+    width: 40%;
+    margin-left: 5%;
+    float: left;
+    font-size: 14px;
+    color: #151515;
+}
 
 .footer {
     color: #777;
@@ -407,6 +442,13 @@ canvas.flare {
 
 
 
+.m3 {
+    position: relative;
+    background-color: #00AFBC ;
+    color: #FFF;
+    width: 100%;
+    overflow: hidden;
+}    
 .m2 {
     background-color: #72B6F4 ;
     color: #043561;
@@ -427,12 +469,7 @@ canvas.flare {
     /*text-decoration: underline;*/
 }
 
-.m2 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0
-}
-.m2 ul li {
+/*.m2 ul li {
     margin-left: .52083%;
     margin-right: .52083%;
     width: 98.95949999999999%;
@@ -440,7 +477,7 @@ canvas.flare {
     list-style: none;
     padding: .75rem;`
     text-align: left;
-}
+}*/
 .m2 p {
     background-color: none;
     font-weight: 300;
@@ -448,13 +485,6 @@ canvas.flare {
     margin: 1em auto 0;
     max-width: 75ch;
     text-align: center;
-}
-.m2 footer {
-    margin-left: .52083%;
-    margin-right: .52083%;
-    width: 98.95949999999999%;
-    margin-top: .75rem;
-    text-align: center
 }
 
 .header2 {
@@ -480,7 +510,15 @@ canvas.flare {
     justify-content: center;
     text-transform: uppercase;
 }
-.btn {
+
+/*.m2 footer {
+    margin-left: .52083%;
+    margin-right: .52083%;
+    width: 98.95949999999999%;
+    margin-top: .75rem;
+    text-align: center
+}*/
+/*.btn {
     position: relative;
     cursor: pointer;
     display: inline-block;
@@ -498,16 +536,7 @@ canvas.flare {
     border: 2px solid #fff;
     border-radius: .3rem;
     border-color: #043561;
-}
-@media (min-width: 85.71428571428571em) {
-    .btn {
-        padding:.45rem 2.5em
-    }
-}
-.btn:hover {
-    background: #043561;
-    color: #72B6F4;
-}
+}*/
 
 
 
