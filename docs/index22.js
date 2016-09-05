@@ -22,15 +22,25 @@
 
 // });
 
-
-$('.m1Text ul li').hide().each(function(index) {
-//   $(this).slideDown(1700).delay(1000 * index);
-  // $(this).slideUp(1700).delay(1000 * index);
-  $(this).fadeIn(1700);
+$(".gallery").flipping_gallery({
+  direction: "forward", // This is will set the flipping direction when the gallery is clicked. Options available are "forward", or "backward". The default value is forward.
+  selector: "> a", // This will let you change the default selector which by default, will look for <a> tag and generate the gallery from it. This option accepts normal CSS selectors.
+  spacing: 10, // You can set the spacing between each photo in the gallery here. The number represents the pixels between each photos. The default value is 10.
+  showMaximum: 15, // This will let you limit the number of photos that will be in the viewport. In case you have a gazillion photos, this is perfect to hide all those photos and limit only a few in the viewport.
+  enableScroll: true, // Set this to false if you don't want the plugin to override your scrolling behavior. The default value is true.
+  flipDirection: "bottom", // You can now set which direction the picture will flip to. Available options are "left", "right", "top", and "bottom". The default value is bottom.
+  autoplay: false // You can set the gallery to autoplay by defining the interval here. This option accepts value in milliseconds. The default value is false.
 });
 
+// ====MANUAL TRIGGERS=====
 
-// $('.flake').removeClass('.flake');
+// $(".gallery").flipForward();
+// $(".gallery").flipBackward();
+
+
+$('.m1Text ul li').hide().each(function() {
+  $(this).fadeIn(1700);
+});
 
 
 var $sB = $('.m1Text ul li');
@@ -57,22 +67,22 @@ $sB.hover(
 
 
 
-$(document).ready(function() {
+// $(document).ready(function() {
 
-    $( "#js-expand" ).click(function (){
-            // $(".jects").html(full);
-            $("h2").css("margin-bottom", "0%");
-            $(".overlay").removeClass("normal");
-            $(".overlay").addClass("full");
+//     $( "#js-expand" ).click(function (){
+//             // $(".jects").html(full);
+//             $("h2").css("margin-bottom", "0%");
+//             $(".overlay").removeClass("normal");
+//             $(".overlay").addClass("full");
     
-    });
+//     });
     
-    $( ".xl" ).click(function (){
-            $(".overlay").removeClass("full");
-            $(".overlay").addClass("normal");
+//     $( ".xl" ).click(function (){
+//             $(".overlay").removeClass("full");
+//             $(".overlay").addClass("normal");
         
-    });
-});
+//     });
+// });
     
 
 
@@ -250,29 +260,6 @@ $(document).ready(function() {
 //     }
 
 // });
-
-
-
-
-var original = `
-  <h2 class="header">Some of the projects Ive worked on</h2> 
-  <ul class="jects">
-  <li>
-    <img id="expand" src="images/FireWater.png" width="100%" height="100%"> </li>&nbsp;&nbsp;&nbsp;
-  <li>
-    <img id="expand" src="images/Hungry.png" width="100%" height="100%"></li> &nbsp;&nbsp;&nbsp;
-  <li>
-    <img id="expand" src="images/Portfolio.png" width="100%" height="100%"> </li> 
-  </ul><br>
-
-  <span class="header">More Coming Very Soon...</span>
-                `;
-var full = `
-<h2 class="header">Some of the projects Ive worked on</h2>
-<img class="xl" src="images/FireWater.png" width="100%" height="100%">
-            `;
-
-
 
 
 
