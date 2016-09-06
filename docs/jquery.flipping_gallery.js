@@ -18,7 +18,7 @@
     flipDirection: "bottom",
     selector: "> a",
     spacing: 10,
-    showMaximum: 15,
+    showMaximum: 10,
     enableScroll: true,
     autoplay: false
 	};
