@@ -1,3 +1,4 @@
+
 body {
     background: #fff;
     margin: 0;
@@ -19,12 +20,17 @@ h4 {
     -webkit-margin-before: 0;    
 }
 
-:root {
-    font-size: 16px;
-}
 
 /*=============LET IT SNOW=====================*/
 .container {
+	background: #090b44; 
+    background: -moz-radial-gradient(center, ellipse cover, #090b44 0%, #00001c 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#090b44), color-stop(100%,#00001c)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, #090b44 0%,#00001c 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, #090b44 0%,#00001c 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, #090b44 0%,#00001c 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center, #090b44 0%,#00001c 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#090b44', endColorstr='#00001c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient *
     position: relative;
     padding: 0;
     margin: 0;
@@ -58,15 +64,6 @@ canvas.flare {
 
 .part1 {
     position: relative;
-    /*background-color: #043561;*/
-    background: #090b44; 
-    background: -moz-radial-gradient(center, ellipse cover, #090b44 0%, #00001c 100%); /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#090b44), color-stop(100%,#00001c)); /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover, #090b44 0%,#00001c 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover, #090b44 0%,#00001c 100%); /* Opera 12+ */
-    background: -ms-radial-gradient(center, ellipse cover, #090b44 0%,#00001c 100%); /* IE10+ */
-    background: radial-gradient(ellipse at center, #090b44 0%,#00001c 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#090b44', endColorstr='#00001c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -77,6 +74,7 @@ canvas.flare {
     margin-right: auto;
     max-width: 1200px;
     padding: 1.5rem 10%;
+    max-width: 1920px;
     width: 100%;
     height: 100%;
 }
@@ -87,10 +85,10 @@ canvas.flare {
     width: 300px;
     height: 500px;
 }
+
 .container2 {
     position: relative;
     float: right;
     width: 300px;
     height: 500px;
-    
 }
