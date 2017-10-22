@@ -93,3 +93,9 @@ canvas.flare {
     width: 300px;
     height: 500px;
 }
+
+.cryptotrap {
+    position: relative;
+    margin-left: 200px;
+	margin-right: 200px;
+}
