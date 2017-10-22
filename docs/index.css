@@ -60,8 +60,8 @@ canvas.flare {
 }
 /*----------End of Snow-------------*/
 header {
-    margin-right: auto;
-    margin-left: auto;
+    text-align: center;
+    padding-bottom: 50px;
     color: wheat;
 }
 
