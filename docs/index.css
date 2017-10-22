@@ -80,15 +80,15 @@ canvas.flare {
 .container1{
     position: relative;
     float: left;
-    width: 300px;
+    width: 450px;
     height: 500px;
-    margin-right: 50px;
+    margin-right: 150px;
 }
 
 .container2 {
     position: relative;
     float: right;
-    width: 300px;
+    width: 450px;
     height: 500px;
 }
 
