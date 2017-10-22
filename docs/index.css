@@ -84,6 +84,7 @@ canvas.flare {
     float: left;
     width: 300px;
     height: 500px;
+    margin-right: 50px;
 }
 
 .container2 {
