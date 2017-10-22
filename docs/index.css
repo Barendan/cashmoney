@@ -4,6 +4,7 @@ body {
     font-weight: 300;
     letter-spacing: .5px;
     font-family: 'Lato', sans-serif;
+    height: 100%;
 }
 * {
     box-sizing: border-box
