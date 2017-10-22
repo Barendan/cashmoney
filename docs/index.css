@@ -1,4 +1,3 @@
-
 body {
     background: #fff;
     margin: 0;
@@ -6,7 +5,6 @@ body {
     letter-spacing: .5px;
     font-family: 'Lato', sans-serif;
 }
-
 * {
     box-sizing: border-box
 }
@@ -19,7 +17,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 h4 {
     -webkit-margin-before: 0;    
 }
-
 
 /*=============LET IT SNOW=====================*/
 .container {
@@ -96,6 +93,7 @@ canvas.flare {
 
 .cryptotrap {
     position: relative;
-    margin-left: 200px;
-	margin-right: 200px;
+    margin-left: 300px;
+    margin-right: 300px;
+    color: white !important;
 }
