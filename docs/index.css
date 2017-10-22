@@ -59,7 +59,10 @@ canvas.flare {
   opacity: 0.5;
 }
 /*----------End of Snow-------------*/
-header {	
+header {
+    margin-right: auto;
+    margin-left: auto;
+    color: wheat;
 }
 
 .part1 {
