@@ -1,47 +1,18 @@
 body {
-    background: #fff;
-    margin: 0;
-    font-weight: 300;
-    letter-spacing: .5px;
-    font-family: 'Lato', sans-serif;
-    height: 100%;
-}
-* {
-    box-sizing: border-box
-}
-div {
-    display: block;
-}
-article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
-    display: block
-}
-h4 {
-    -webkit-margin-before: 0;    
-}
-
-/*=============LET IT SNOW=====================*/
-.container {
-	background: #090b44; 
+	background: #090b44;
     background: -moz-radial-gradient(center, ellipse cover, #090b44 0%, #00001c 100%); /* FF3.6+ */
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#090b44), color-stop(100%,#00001c)); /* Chrome,Safari4+ */
     background: -webkit-radial-gradient(center, ellipse cover, #090b44 0%,#00001c 100%); /* Chrome10+,Safari5.1+ */
     background: -o-radial-gradient(center, ellipse cover, #090b44 0%,#00001c 100%); /* Opera 12+ */
     background: -ms-radial-gradient(center, ellipse cover, #090b44 0%,#00001c 100%); /* IE10+ */
     background: radial-gradient(ellipse at center, #090b44 0%,#00001c 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#090b44', endColorstr='#00001c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient *
-    position: relative;
-    padding: 0;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#090b44', endColorstr='#00001c',GradientType=1 );
+    
     margin: 0;
-    /*height: 100%;*/
+    font-weight: 300;
+    letter-spacing: .5px;
+    font-family: 'Lato', sans-serif;
     height: 100vh;
-    /*padding-bottom: 50px;*/
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    z-index: 10;
-}
-html {
-  height: 100%;
 }
 
 canvas.flare,
@@ -56,52 +27,80 @@ canvas.flake {
   z-index: 15;
 }
 canvas.flare {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 /*----------End of Snow-------------*/
+.topbar iframe {
+    height: 85px;
+}
+.topbar span {
+    display: none !important;
+}
+.topbar .tv-widget-ticker {
+}
+
+#widget-ticker-container {
+    background-color: black !important;
+
+}
+
+
+
+
 header {
     text-align: center;
     padding-bottom: 50px;
     color: wheat;
 }
 
-.part1 {
-    position: relative;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-left: auto;
+.tickerhold {
+    color: wheat;
     margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5%;
     max-width: 1200px;
     padding: 1.5rem 10%;
     max-width: 1920px;
-    width: 100%;
+    width: 700px;
     height: 100%;
 }
 
 .container1{
-    position: relative;
     float: left;
-    width: 450px;
-    height: 500px;
-    margin-right: 150px;
+    color: wheat;
+    width: 100px;
+    height: 100px;
 }
-
 .container2 {
-    position: relative;
     float: right;
-    width: 450px;
-    height: 500px;
-}
-
-.cryptotrap {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
     color: wheat;
 }
 
+.sideprice {
+    max-width: 1200px;
+    padding: 1.5rem 10%;
+    width: 400px;
+    height: 600px;
+    font-size: 12px !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+.clicky {
+    display: block;
+    width: 25%;
+    min-height: 100px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    color: wheat;
+}
 
+.chartstart {
+    display: block;
+    width: 70vw;
+    height: 70vh;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+    margin-top: 55px;
+}

@@ -1,69 +1,81 @@
 
+$(document).ready(function() {  
+  var item = $('.tv-widget-watch-list__last');
+
+  console.log("Testing 1 2 3");
+});
+
+// function changeBGColor() {
+//   var cols =     document.getElementByClassName('col1');
+//   for(i=0; i<cols.length; i++) {
+//     cols[i].style.backgroundColor =    'blue';
+//   }
+// };
+
+
 // $(document).ready(function() {
-    // $(window).resize(function() {
-    //     var bodyheight = $(this).height();
-    //     $(".m1").height(bodyheight);
+//     $(window).resize(function() {
+//         var bodyheight = $(this).height();
+//         $(".m1").height(bodyheight);
 
-    // console.log( "here:", bodyheight);
+//     console.log( "here:", bodyheight);
 
-    // }).resize();
+//     }).resize();
 
-    // console.log( $(window).width() );
-    // console.log( $(window).height() );
+//     console.log( $(window).width() );
+//     console.log( $(window).height() );
 
 
-    // $(window).resize(function() {
-    //     var bodyheight = $(this).height();
-    //     $(".m1").height(bodyheight);
+//     $(window).resize(function() {
+//         var bodyheight = $(this).height();
+//         $(".m1").height(bodyheight);
 
-    // console.log( "here:", bodyheight);
+//     console.log( "here:", bodyheight);
 
-    // }).resize();
+//     }).resize();
 
 // });
 
-$(".gallery").flipping_gallery({
-  direction: "forward", // This is will set the flipping direction when the gallery is clicked. Options available are "forward", or "backward". The default value is forward.
-  selector: "> a", // This will let you change the default selector which by default, will look for <a> tag and generate the gallery from it. This option accepts normal CSS selectors.
-  spacing: 10, // You can set the spacing between each photo in the gallery here. The number represents the pixels between each photos. The default value is 10.
-  showMaximum: 13, // This will let you limit the number of photos that will be in the viewport. In case you have a gazillion photos, this is perfect to hide all those photos and limit only a few in the viewport.
-  enableScroll: true, // Set this to false if you don't want the plugin to override your scrolling behavior. The default value is true.
-  flipDirection: "bottom", // You can now set which direction the picture will flip to. Available options are "left", "right", "top", and "bottom". The default value is bottom.
-  autoplay: false // You can set the gallery to autoplay by defining the interval here. This option accepts value in milliseconds. The default value is false.
-});
-
-// ====MANUAL TRIGGERS=====
-
-// $(".gallery").flipForward();
-// $(".gallery").flipBackward();
 
 
-$('.m1Text ul li').hide().each(function() {
-  $(this).fadeIn(1700);
-});
 
 
-var $sB = $('.m1Text ul li');
 
-$sB.hover( 
-  function() {
-    var $svg = $(this).children().find('#icons');
-    var $flake = $(this).find('a');
-    // var cookie = $(this).find('a').attr('id','');
-    // cookie;
 
-    // $flake.css("border-radius","0%");
-    $(this).find('#burst-8').css("opacity", "1.0");
-  },
-  function() {
-    var $svg = $(this).children().find('#icons');
-    var $flake = $(this).find('.flake');
-    var cookie = $(this).find('a').attr('id','burst-8');
+// $('.m1Text ul li').hide().each(function() {
+//   $(this).fadeIn(1700);
+// });
 
-    // $flake.css("border-radius","50%");
-    $(this).find('#burst-8').css("opacity", "0.5");
-  }
-);
+
+// var $sB = $('.m1Text ul li');
+
+// $sB.hover( 
+//   function() {
+//     var $svg = $(this).children().find('#icons');
+//     var $flake = $(this).find('a');
+//     // var cookie = $(this).find('a').attr('id','');
+//     // cookie;
+
+//     // $flake.css("border-radius","0%");
+//     $(this).find('#burst-8').css("opacity", "1.0");
+//   },
+//   function() {
+//     var $svg = $(this).children().find('#icons');
+//     var $flake = $(this).find('.flake');
+//     var cookie = $(this).find('a').attr('id','burst-8');
+
+//     // $flake.css("border-radius","50%");
+//     $(this).find('#burst-8').css("opacity", "0.5");
+//   }
+// );
+
+
+
+
+
+
+
+
 
 
 
