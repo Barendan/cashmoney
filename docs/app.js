@@ -5,36 +5,30 @@ $(document).ready(function() {
   console.log("Testing 1 2 3");
 });
 
-// function changeBGColor() {
-//   var cols =     document.getElementByClassName('col1');
-//   for(i=0; i<cols.length; i++) {
-//     cols[i].style.backgroundColor =    'blue';
-//   }
-// };
 
 
-// $(document).ready(function() {
-//     $(window).resize(function() {
-//         var bodyheight = $(this).height();
-//         $(".m1").height(bodyheight);
+$(document).ready(function() {
+    $(window).resize(function() {
+        var bodyheight = $(this).height();
+        $(".m1").height(bodyheight);
 
-//     console.log( "here:", bodyheight);
+    console.log( "here:", bodyheight);
 
-//     }).resize();
+    }).resize();
 
-//     console.log( $(window).width() );
-//     console.log( $(window).height() );
+    console.log( $(window).width() );
+    console.log( $(window).height() );
 
 
-//     $(window).resize(function() {
-//         var bodyheight = $(this).height();
-//         $(".m1").height(bodyheight);
+    $(window).resize(function() {
+        var bodyheight = $(this).height();
+        $(".m1").height(bodyheight);
 
-//     console.log( "here:", bodyheight);
+    console.log( "here:", bodyheight);
 
-//     }).resize();
+    }).resize();
 
-// });
+});
 
 
 
@@ -103,160 +97,160 @@ $(document).ready(function() {
 
 
 
-// var camera, scene, renderer;
+var camera, scene, renderer;
 
-// var texture_placeholder,
-// isUserInteracting = false,
-// onMouseDownMouseX = 0, onMouseDownMouseY = 0,
-// lon = 90, onMouseDownLon = 0,
-// lat = 0, onMouseDownLat = 0,
-// phi = 0, theta = 0,
-// target = new THREE.Vector3();
+var texture_placeholder,
+isUserInteracting = false,
+onMouseDownMouseX = 0, onMouseDownMouseY = 0,
+lon = 90, onMouseDownLon = 0,
+lat = 0, onMouseDownLat = 0,
+phi = 0, theta = 0,
+target = new THREE.Vector3();
 
-// init();
-// animate();
+init();
+animate();
 
-// function init() {
+function init() {
 
-//   var container, mesh;
+  var container, mesh;
 
-//   container = document.getElementById( 'container' );
+  container = document.getElementById( 'container' );
 
-//   camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 1100 );
+  camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 1100 );
 
-//   scene = new THREE.Scene();
+  scene = new THREE.Scene();
 
-//   texture_placeholder = document.createElement( 'canvas' );
-//   texture_placeholder.width = 128;
-//   texture_placeholder.height = 128;
+  texture_placeholder = document.createElement( 'canvas' );
+  texture_placeholder.width = 128;
+  texture_placeholder.height = 128;
 
-//   var context = texture_placeholder.getContext( '2d' );
-//   context.fillStyle = 'rgb( 200, 200, 200 )';
-//   context.fillRect( 0, 0, texture_placeholder.width, texture_placeholder.height );
+  var context = texture_placeholder.getContext( '2d' );
+  context.fillStyle = 'rgb( 200, 200, 200 )';
+  context.fillRect( 0, 0, texture_placeholder.width, texture_placeholder.height );
 
-//   var materials = [
+  var materials = [
 
-//     loadTexture( 'images/px.jpg' ), // right
-//     loadTexture( 'images/nx.jpg' ), // left
-//     loadTexture( 'images/py.jpg' ), // top
-//     loadTexture( 'images/ny.jpg' ), // bottom
-//     loadTexture( 'images/pz.jpg' ), // back
-//     loadTexture( 'images/nz.jpg' ) // front
+    loadTexture( 'images/px.jpg' ), // right
+    loadTexture( 'images/nx.jpg' ), // left
+    loadTexture( 'images/py.jpg' ), // top
+    loadTexture( 'images/ny.jpg' ), // bottom
+    loadTexture( 'images/pz.jpg' ), // back
+    loadTexture( 'images/nz.jpg' ) // front
 
-//   ];
+  ];
 
-//   mesh = new THREE.Mesh( new THREE.BoxGeometry( 300, 300, 300, 7, 7, 7 ), new THREE.MultiMaterial( materials ) );
-//   mesh.scale.x = - 1;
-//   scene.add( mesh );
+  mesh = new THREE.Mesh( new THREE.BoxGeometry( 300, 300, 300, 7, 7, 7 ), new THREE.MultiMaterial( materials ) );
+  mesh.scale.x = - 1;
+  scene.add( mesh );
 
-//   for ( var i = 0, l = mesh.geometry.vertices.length; i < l; i ++ ) {
+  for ( var i = 0, l = mesh.geometry.vertices.length; i < l; i ++ ) {
 
-//     var vertex = mesh.geometry.vertices[ i ];
+    var vertex = mesh.geometry.vertices[ i ];
 
-//     vertex.normalize();
-//     vertex.multiplyScalar( 550 );
+    vertex.normalize();
+    vertex.multiplyScalar( 550 );
 
-//   }
+  }
 
-//   renderer = new THREE.CanvasRenderer();
-//   renderer.setPixelRatio( window.devicePixelRatio );
-//   renderer.setSize( window.innerWidth, window.innerHeight );
-//   container.appendChild( renderer.domElement );
+  renderer = new THREE.CanvasRenderer();
+  renderer.setPixelRatio( window.devicePixelRatio );
+  renderer.setSize( window.innerWidth, window.innerHeight );
+  container.appendChild( renderer.domElement );
 
-//   document.addEventListener( 'touchstart', onDocumentTouchStart, false );
-//   document.addEventListener( 'touchmove', onDocumentTouchMove, false );
+  document.addEventListener( 'touchstart', onDocumentTouchStart, false );
+  document.addEventListener( 'touchmove', onDocumentTouchMove, false );
 
-//   //
+  //
 
-//   window.addEventListener( 'resize', onWindowResize, false );
+  window.addEventListener( 'resize', onWindowResize, false );
 
-// }
+}
 
-// function onWindowResize() {
+function onWindowResize() {
 
-//   camera.aspect = window.innerWidth / window.innerHeight;
-//   camera.updateProjectionMatrix();
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
 
-//   renderer.setSize( window.innerWidth, window.innerHeight );
+  renderer.setSize( window.innerWidth, window.innerHeight );
 
-// }
+}
 
-// function loadTexture( path ) {
+function loadTexture( path ) {
 
-//   var texture = new THREE.Texture( texture_placeholder );
-//   var material = new THREE.MeshBasicMaterial( { map: texture, overdraw: 0.5 } );
+  var texture = new THREE.Texture( texture_placeholder );
+  var material = new THREE.MeshBasicMaterial( { map: texture, overdraw: 0.5 } );
 
-//   var image = new Image();
-//   image.onload = function () {
+  var image = new Image();
+  image.onload = function () {
 
-//     texture.image = this;
-//     texture.needsUpdate = true;
+    texture.image = this;
+    texture.needsUpdate = true;
 
-//   };
-//   image.src = path;
+  };
+  image.src = path;
 
-//   return material;
+  return material;
 
-// }
+}
 
-// function onDocumentTouchStart( event ) {
+function onDocumentTouchStart( event ) {
 
-//   if ( event.touches.length == 1 ) {
+  if ( event.touches.length == 1 ) {
 
-//     event.preventDefault();
+    event.preventDefault();
 
-//     onPointerDownPointerX = event.touches[ 0 ].pageX;
-//     onPointerDownPointerY = event.touches[ 0 ].pageY;
+    onPointerDownPointerX = event.touches[ 0 ].pageX;
+    onPointerDownPointerY = event.touches[ 0 ].pageY;
 
-//     onPointerDownLon = lon;
-//     onPointerDownLat = lat;
+    onPointerDownLon = lon;
+    onPointerDownLat = lat;
 
-//   }
+  }
 
-// }
+}
 
-// function onDocumentTouchMove( event ) {
+function onDocumentTouchMove( event ) {
 
-//   if ( event.touches.length == 1 ) {
+  if ( event.touches.length == 1 ) {
 
-//     event.preventDefault();
+    event.preventDefault();
 
-//     lon = ( onPointerDownPointerX - event.touches[0].pageX ) * 0.1 + onPointerDownLon;
-//     lat = ( event.touches[0].pageY - onPointerDownPointerY ) * 0.1 + onPointerDownLat;
+    lon = ( onPointerDownPointerX - event.touches[0].pageX ) * 0.1 + onPointerDownLon;
+    lat = ( event.touches[0].pageY - onPointerDownPointerY ) * 0.1 + onPointerDownLat;
 
-//   }
+  }
 
-// }
+}
 
-// function animate() {
+function animate() {
 
-//   requestAnimationFrame( animate );
-//   update();
+  requestAnimationFrame( animate );
+  update();
 
-// }
+}
 
-// function update() {
+function update() {
 
-//   if ( isUserInteracting === false ) {
+  if ( isUserInteracting === false ) {
 
-//     lon += 0.1;
+    lon += 0.1;
 
-//   }
+  }
 
-//   lat = Math.max( - 85, Math.min( 85, lat ) );
-//   phi = THREE.Math.degToRad( 90 - lat );
-//   theta = THREE.Math.degToRad( lon );
+  lat = Math.max( - 85, Math.min( 85, lat ) );
+  phi = THREE.Math.degToRad( 90 - lat );
+  theta = THREE.Math.degToRad( lon );
 
-//   target.x = 500 * Math.sin( phi ) * Math.cos( theta );
-//   target.y = 500 * Math.cos( phi );
-//   target.z = 500 * Math.sin( phi ) * Math.sin( theta );
+  target.x = 500 * Math.sin( phi ) * Math.cos( theta );
+  target.y = 500 * Math.cos( phi );
+  target.z = 500 * Math.sin( phi ) * Math.sin( theta );
 
-//   camera.position.copy( target ).negate();
-//   camera.lookAt( target );
+  camera.position.copy( target ).negate();
+  camera.lookAt( target );
 
-//   renderer.render( scene, camera );
+  renderer.render( scene, camera );
 
-// }
+}
 
 // ------------------------------------------------
 
